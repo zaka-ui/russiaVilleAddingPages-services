@@ -1,0 +1,21 @@
+#about-page.page-hero-section {
+    background-image: url(../../assets/images/about-page.jpg);
+}
+
+@media (max-width: 768px) {
+.col-lg-6.order-lg-1 {
+    margin-bottom: 1rem !important;
+}
+}
+
+p  {
+    font-family: 'Quicksand' !important;
+}
+
+strong {
+    font-family: 'Quicksand' !important;
+}
+
+.btn .btn-txt .anim-txt {
+    font-family: 'Quicksand' !important;
+}

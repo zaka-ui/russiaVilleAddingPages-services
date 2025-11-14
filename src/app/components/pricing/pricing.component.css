@@ -1,0 +1,3 @@
+/* Pricing component minimal styles - file kept intentionally small to inherit project styles */
+.pricing-1-table .pricing-list .pricing-1-item { margin-bottom: 12px; }
+.price-number p { font-weight: 700; }

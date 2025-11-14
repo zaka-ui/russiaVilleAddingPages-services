@@ -1,0 +1,76 @@
+<!-- PAGE CONTENT
+============================================= -->
+<div id="page" class="page">
+
+  <!-- HEADER
+  ============================================= -->
+  <app-header></app-header>
+  <!-- END HEADER -->
+
+  <!-- HERO SECTION
+  ============================================= -->
+  <app-hero-carousel [slides]="slides" [slideImage]="slideImage" [slideImageAlt]="slideImageAlt"></app-hero-carousel>
+
+  <!-- LOOPING TEXT CAROUSEL
+  ============================================= -->
+  <app-loop-carousel [items]="loopItems"></app-loop-carousel>
+
+  <!-- ABOUT SERVICES (DYNAMIC LOOP)
+  ============================================= -->
+  <ng-container *ngFor="let service of servicesAbout">
+    <app-about-services [service]="service"></app-about-services>
+  </ng-container>
+  <!-- END ABOUT SERVICES -->
+
+  <!-- ABOUT INTRO SECTION
+  ============================================= -->
+  <app-about-intro [data]="aboutIntroData"></app-about-intro>
+  <!-- END ABOUT INTRO -->
+
+  <!-- SERVICES BOXES
+  ============================================= -->
+  <app-services-boxes [servicesData]="servicesBoxesData"></app-services-boxes>
+  <!-- END SERVICES BOXES -->
+
+  <!-- HIGHLIGHT SECTION
+  ============================================= -->
+  <app-highlight-section [data]="highlightData"></app-highlight-section>
+
+  <!-- PRICING SECTION
+  ============================================= -->
+  <app-pricing [data]="pricingData"></app-pricing>
+  <!-- END PRICING -->
+
+  <!-- MAIN CONTENT SECTION
+  ============================================= -->
+  <app-content-section [data]="contentSectionData"></app-content-section>
+
+  <!-- TESTIMONIALS / REVIEWS
+  ============================================= -->
+  <app-reviews [data]="reviewsData"></app-reviews>
+  <!-- END TESTIMONIALS -->
+
+  <!-- WORKING HOURS
+  ============================================= -->
+  <app-working-hours [data]="workingHoursData"></app-working-hours>
+
+  <!-- STATISTICS SECTION
+  ============================================= -->
+  <app-statistics [data]="statisticsData"></app-statistics>
+  <!-- END STATISTICS -->
+
+  <!-- DIVIDER LINE -->
+  <hr class="divider">
+
+  <!-- GALLERY SECTION
+  ============================================= -->
+  <app-gallery [data]="galleryData"></app-gallery>
+  <!-- END GALLERY -->
+
+  <!-- FOOTER
+  ============================================= -->
+  <app-footer></app-footer>
+  <!-- END FOOTER -->
+
+</div>
+<!-- END PAGE CONTENT -->

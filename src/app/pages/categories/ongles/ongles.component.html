@@ -1,0 +1,51 @@
+<app-header></app-header>
+
+<!-- App Hero carousel -->
+<app-hero-carousel
+  [titleFontSize]="'4rem'"
+  [slides]="slides"
+  [slideImage]="slideImage"
+  [slideImageAlt]="slideImageAlt"
+  
+  >
+</app-hero-carousel>
+
+<!--Text Loop-->
+<app-loop-carousel [items]="items"></app-loop-carousel>
+
+<!--seconde section-->  
+<app-content-section [data]="data"  [accordionData]="accordionData"></app-content-section>
+
+
+<!--Forth section-->
+<ng-container *ngFor="let service of servicesAbout">
+    <app-about-services [service]="service"></app-about-services>
+</ng-container>
+
+<!--Fifth section-->
+<app-highlight-section [data]="highlightData"></app-highlight-section>
+
+<ng-container *ngFor="let service of servicesDepose">
+    <app-about-services [service]="service"></app-about-services>
+</ng-container>
+
+<!--
+  <app-highlight-section [data]="highlightDataDepose"></app-highlight-section>
+-->
+
+
+<app-highlight-section [data]="highlightDataLamination"></app-highlight-section>
+
+
+
+<!--Section Local-->
+
+<!--CTA-->
+<app-cta-banner [data]="data" ></app-cta-banner>
+<!--Tarif-->
+
+
+<!--Location-->
+<app-highlights-with-location></app-highlights-with-location>
+
+<app-footer></app-footer>

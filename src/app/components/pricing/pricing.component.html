@@ -1,0 +1,103 @@
+<div id="pricing" class="py-60 pricing-1 pricing-section division">
+  <div class="container">
+    <!-- TITRE DE SECTION -->    
+    <div class="row justify-content-center">    
+      <div class="col-md-10 col-lg-10">
+        <div class="section-title mb-70">    
+          <!-- Sous-titre -->
+          <span class="module-subtitle color--theme">{{ data.subtitle }}</span>    
+          <!-- Titre principal -->
+          <h2 class="fs-50" [innerHTML]="data.title"></h2>    
+          <!-- Texte descriptif -->
+          <p class="fs-17" [innerHTML]="data.description"></p>
+        </div>    
+      </div>
+    </div>
+
+    <!-- CONTENU DES TARIFS -->
+    <div class="pricing-1-wrapper">
+      <div class="row">
+        <!-- COLONNE DE GAUCHE -->
+        <div class="col-lg-6">
+          <!-- With Categories -->
+          <ng-container *ngIf="data.leftColumn.categories; else simpleLeft">
+            <div *ngFor="let category of data.leftColumn.categories" class="pricing-1-table left-column wow fadeInUp">
+              <h3 *ngIf="category.category" class="price-category">{{ category.category }}</h3>
+              <ul class="pricing-list">
+                <li *ngFor="let item of category.items" class="pricing-1-item">
+                  <div class="detail-price">
+                    <div class="price-name"><p>{{ item.name }}</p></div>
+                    <div class="price-dots"></div>
+                    <div class="price-number"><p>{{ item.price }}</p></div>
+                  </div>
+                  <div *ngIf="item.note" class="price-txt"><p>{{ item.note }}</p></div>
+                </li>
+              </ul>
+            </div>
+          </ng-container>
+
+          <!-- Simple Items -->
+          <ng-template #simpleLeft>
+            <div class="pricing-1-table left-column wow fadeInUp">
+              <ul class="pricing-list">
+                <li *ngFor="let item of data.leftColumn.items" class="pricing-1-item">
+                  <div class="detail-price">
+                    <div class="price-name"><p>{{ item.name }}</p></div>
+                    <div class="price-dots"></div>
+                    <div class="price-number"><p>{{ item.price }}</p></div>
+                  </div>
+                  <div *ngIf="item.note" class="price-txt"><p>{{ item.note }}</p></div>
+                </li>
+              </ul>
+            </div>
+          </ng-template>
+        </div>
+
+        <!-- COLONNE DE DROITE -->
+        <div class="col-lg-6">
+          <!-- With Categories -->
+          <ng-container *ngIf="data.rightColumn.categories; else simpleRight">
+            <div *ngFor="let category of data.rightColumn.categories" class="pricing-1-table right-column wow fadeInUp">
+              <h3 *ngIf="category.category" class="price-category">{{ category.category }}</h3>
+              <ul class="pricing-list">
+                <li *ngFor="let item of category.items" class="pricing-1-item">
+                  <div class="detail-price">
+                    <div class="price-name"><p>{{ item.name }}</p></div>
+                    <div class="price-dots"></div>
+                    <div class="price-number"><p>{{ item.price }}</p></div>
+                  </div>
+                  <div *ngIf="item.note" class="price-txt"><p>{{ item.note }}</p></div>
+                </li>
+              </ul>
+            </div>
+          </ng-container>
+
+          <!-- Simple Items -->
+          <ng-template #simpleRight>
+            <div class="pricing-1-table right-column wow fadeInUp">    
+              <ul class="pricing-list">
+                <li *ngFor="let item of data.rightColumn.items" class="pricing-1-item">
+                  <div class="detail-price">
+                    <div class="price-name"><p>{{ item.name }}</p></div>
+                    <div class="price-dots"></div>
+                    <div class="price-number"><p>{{ item.price }}</p></div>
+                  </div>
+                  <div *ngIf="item.note" class="price-txt"><p>{{ item.note }}</p></div>
+                </li>
+              </ul>
+            </div>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO COMPLÉMENTAIRE -->
+    <div class="row">
+      <div class="col">
+        <div class="block-info mt-75">
+          <span class="block-info-txt" [innerHTML]="data.blockInfo"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

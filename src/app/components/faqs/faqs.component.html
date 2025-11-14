@@ -1,0 +1,53 @@
+<section class="py-120 faqs-1 faqs-section division">				
+	<div class="container">
+
+		<!-- SECTION TITLE -->	
+		<div class="row justify-content-center">	
+			<div class="col-md-10 col-lg-8">
+				<div class="section-title mb-60">	
+					<span class="module-subtitle color--theme">{{ data.subtitle }}</span>	
+					<h2 class="fs-50">{{ data.title }}</h2>	
+				</div>	
+			</div>
+		</div>
+
+		<!-- FAQs QUESTIONS -->	
+		<div class="faqs-1-questions">
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					<div class="accordion-wrapper">
+						<ul class="accordion">
+
+							<!-- ACCORDION ITEMS -->
+							<li *ngFor="let faq of data.faqs; let last = last" 
+							    class="accordion-item wow animate__animated animate__fadeInUp"
+							    [class.is-active]="faq.isActive"
+							    [class.acc-last-item]="last">
+								<div class="accordion-thumb" (click)="toggleAccordion(faq)">
+									<h5 class="fs-23">{{ faq.question }}</h5>
+								</div>
+								<div class="accordion-panel" *ngIf="faq.isActive">
+									<p [innerHTML]="faq.answer"></p>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+		<!-- BLOCK INFO -->
+		<div class="row">
+			<div class="col">
+				<div class="block-info mt-75">
+					<span class="block-info-txt">
+						{{ data.contactText }}
+						<a [href]="data.contactLink">Écrivez-nous ici</a>
+					</span>
+				</div>
+			</div>
+		</div>	
+
+	</div>
+</section>

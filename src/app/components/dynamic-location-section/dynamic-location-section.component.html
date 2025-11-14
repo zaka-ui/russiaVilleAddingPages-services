@@ -1,0 +1,38 @@
+<div class="container">
+      <div class="content-section">
+        <h1 class="title">{{data.title}}</h1>
+        
+        <p class="description">{{data.description}}</p>
+
+        <ul class="location-list">
+          <li *ngFor="let location of data.locations" class="location-item">
+            <span class="icon">{{ location.icon }}</span>
+            <span class="location-name">{{ location.name }}</span>
+          </li>
+        </ul>
+
+        <p *ngIf="data.description" class="description">
+          {{data.descriptionTwo}}
+        </p>
+
+        <ul class="location-list">
+          <li *ngFor="let point of data.points" class="location-item">
+            <span class="icon">{{ point.icon }}</span>
+            <span class="location-name">{{ point.name }}</span>
+          </li>
+        </ul>
+
+        <p *ngIf="data.descriptionThree" class="description">{{data.descriptionThree}}</p>
+      </div>
+
+     <div class="map-section">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.8686411406516!2d-8.009670499999999!3d31.637446800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafef19c30f3807%3A0x289e9883696b305!2sRussiaville%20beauty%20bar!5e0!3m2!1sfr!2sma!4v1763120138419!5m2!1sfr!2sma" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+          class="map-iframe"
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+</div>

@@ -1,0 +1,39 @@
+<section [id]="'about-' + service.id" class="pt-120 ct-01 content-section division">
+  <div class="container">
+    <div class="row d-flex align-items-center">
+
+      <!-- IMAGE BLOCK -->
+      <div *ngIf="service.imagePosition === 'left'" class="col-lg-6 order-lg-1">
+        <div class="img-block right-column wow animate__animated animate__fadeInLeft">
+          <img class="img-fluid" [src]="service.image" [alt]="service.imageAlt">
+        </div>
+      </div>
+
+      <!-- TEXT BLOCK -->
+      <div [class]="service.imagePosition === 'left' ? 'col-lg-6 order-lg-2' : 'col-lg-6 order-lg-1'">
+        <div class="txt-block left-column wow animate__animated animate__fadeInRight">
+          <span class="module-subtitle color--theme" >{{ service.subtitle }}</span>
+          <h2 class="fs-42" style="font-weight: normal;" [innerHTML]="service.title"></h2>
+          <p>{{ service.description }}</p>
+          <ul class="check-list ico-20 mt-15">
+
+            <li *ngIf="service.features" class="accordionData">
+              <app-see-more [accordionData]="service.features"></app-see-more>
+            </li>
+
+          </ul>
+          <p *ngIf="service.conseil">{{service.conseil}}</p>
+          
+        </div>
+      </div>
+
+      <!-- IMAGE BLOCK (right) -->
+      <div *ngIf="service.imagePosition === 'right'" class="col-lg-6 order-lg-2">
+        <div class="img-block right-column wow animate__animated animate__fadeInLeft">
+          <img class="img-fluid" [src]="service.image" [alt]="service.imageAlt">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

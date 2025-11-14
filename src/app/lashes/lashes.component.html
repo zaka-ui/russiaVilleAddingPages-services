@@ -1,0 +1,36 @@
+<div id="page" class="page">
+
+  <!-- HEADER -->
+  <app-header></app-header>
+  <!-- END HEADER -->
+
+  <!-- PAGE HERO -->
+  <app-pricing-hero
+    [title]="'Menu Salon Pour Cils'"
+    [backgroundImage]="'../../assets/images/clis-page.png'"
+    [breadcrumbs]="[
+      { label: 'Accueil', url: '/' },
+      { label: 'Tarifs' },
+      { label: 'Cils', url: '/tarifs/cils' }
+    ]">
+  </app-pricing-hero>
+  <!-- END PAGE HERO -->
+
+  <!-- PRICING SECTION -->
+  <app-pricing [data]="pricingDataCils"></app-pricing>
+  <!-- END PRICING SECTION -->
+
+  <!-- TESTIMONIALS -->
+  <app-reviews-bgs [data]="reviewsData"></app-reviews-bgs>
+  <!-- END TESTIMONIALS -->
+
+  
+  <!-- WORKING HOURS -->
+  <app-working-hours [data]="workingHoursData"></app-working-hours>
+  <!-- END WORKING HOURS -->
+
+  <!-- FOOTER -->
+  <app-footer></app-footer>
+  <!-- END FOOTER -->
+
+</div>

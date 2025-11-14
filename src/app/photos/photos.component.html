@@ -1,0 +1,51 @@
+<div id="page" class="page">
+
+  <!-- HEADER -->
+  <app-header></app-header>
+  <!-- END HEADER -->
+
+  <!-- INNER PAGE TITLE -->
+  <section id="gallery-page" class="inner-page-title division">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="page-title-txt">
+
+            <!-- Module Subtitle -->
+            <span class="module-subtitle color--theme">Fraîcheur, Éclat, Lumière</span>
+
+            <!-- Title -->
+            <h2 class="fs-58" style="font-weight: normal;">Un Geste de Perfection</h2>
+
+            <!-- Description -->
+            <p class="fs-18">
+              Découvrez notre galerie et admirez le talent de nos stylistes spécialisées en ongles, cils et sourcils.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END INNER PAGE TITLE -->
+
+  <!-- GALLERY -->
+  <app-all-gallery [images]="galleryData.images" [instagramLink]="galleryData.instagramLink"></app-all-gallery>
+  <!-- END GALLERY -->
+
+  <!-- STATISTICS SECTION -->
+  <app-statistics [data]="statisticsData"></app-statistics>
+  <!-- END STATISTICS -->
+
+  <!-- TESTIMONIALS / REVIEWS -->
+  <app-reviews [data]="reviewsData"></app-reviews>
+  <!-- END TESTIMONIALS -->
+
+  <!-- DIVIDER LINE -->
+  <hr class="divider">
+
+  <!-- FOOTER -->
+  <app-footer></app-footer>
+  <!-- END FOOTER -->
+
+</div>

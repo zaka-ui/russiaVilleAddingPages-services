@@ -1,0 +1,29 @@
+<!-- PAGE HERO -->
+<section id="pricing-page" class="bg--fixed page-hero-section division" [style.backgroundImage]="'url(' + backgroundImage + ')'">
+    <div class="hero-overlay"></div>
+    <div class="container">	
+        <div class="row">	
+            <div class="col color--white hero-content">
+
+                <!-- TITLE -->
+                <h2 class="fs-60 hero-title">{{ title }}</h2>
+
+                <!-- BREADCRUMB -->
+                <div class="breadcrumb-nav">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li *ngFor="let item of breadcrumbs; let last = last" 
+                                [ngClass]="{ 'breadcrumb-item': true, 'active': last }"
+                                [attr.aria-current]="last ? 'page' : null">
+                                <a *ngIf="item.url && !last" [href]="item.url" style="text-decoration: none;">{{ item.label }}</a>
+                                <span *ngIf="!item.url || last">{{ item.label }}</span>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+
+            </div>
+        </div>    <!-- End row --> 
+    </div>	   <!-- End container --> 
+</section> 	
+<!-- END PAGE HERO -->

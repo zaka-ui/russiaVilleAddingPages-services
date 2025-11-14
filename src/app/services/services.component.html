@@ -1,0 +1,51 @@
+<div id="page" class="page">
+
+  <!-- HEADER -->
+  <app-header></app-header>
+  <!-- END HEADER -->
+
+  <!-- PAGE HERO -->
+  <app-pricing-hero
+    [title]="'Nos Tarifs'"
+    [backgroundImage]="'../../assets/images/services-page.png'"
+    [breadcrumbs]="[
+      { label: 'Accueil', url: '/' },
+      { label: 'Tarifs' }
+    ]">
+  </app-pricing-hero>
+  <!-- END PAGE HERO -->
+
+  <!-- TEXT CONTENT -->
+  <app-pricing-showcase></app-pricing-showcase>
+  <!-- END TEXT CONTENT -->
+
+  <!-- PRICING SECTIONS -->
+  <app-pricing [data]="pricingDataSourcils"></app-pricing>
+  <app-pricing [data]="pricingDataCils"></app-pricing>
+  <app-pricing [data]="pricingDataOngles"></app-pricing>
+  <!-- END PRICING SECTIONS -->
+
+  <!-- DIVIDER -->
+  <hr class="divider">
+
+  <!-- TESTIMONIALS -->
+  <app-reviews-bgs [data]="reviewsData"></app-reviews-bgs>
+  <!-- END TESTIMONIALS -->
+
+  <!-- SERVICES FEATURES -->
+  <app-services-features [data]="servicesFeaturesData"></app-services-features>
+  <!-- END SERVICES FEATURES -->
+
+  <!-- FAQs -->
+  <app-faqs [data]="faqsData"></app-faqs>
+  <!-- END FAQs -->
+
+  <!-- CTA BANNER -->
+  <app-cta-banner [data]="ctaBannerData"></app-cta-banner>
+  <!-- END CTA BANNER -->
+
+  <!-- FOOTER -->
+  <app-footer></app-footer>
+  <!-- END FOOTER -->
+
+</div>

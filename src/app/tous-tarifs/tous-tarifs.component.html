@@ -1,0 +1,36 @@
+<div id="page" class="page">
+
+  <!-- HEADER -->
+  <app-header></app-header>
+  <!-- END HEADER -->
+
+  <!-- PAGE HERO -->
+  <app-pricing-hero
+    [title]="'Menu Salon'"
+    [backgroundImage]="'../../assets/images/services-page.png'"
+    [breadcrumbs]="[
+      { label: 'Accueil', url: '/' },
+      { label: 'Tarifs' }
+    ]">
+  </app-pricing-hero>
+  <!-- END PAGE HERO -->
+
+  <!-- PRICING SECTIONS -->
+  <app-pricing [data]="pricingDataSourcils"></app-pricing>
+  <app-pricing [data]="pricingDataCils"></app-pricing>
+  <app-pricing [data]="pricingDataOngles"></app-pricing>
+  <!-- END PRICING SECTIONS -->
+
+  <!-- TESTIMONIALS -->
+  <app-reviews-bgs [data]="reviewsData"></app-reviews-bgs>
+  <!-- END TESTIMONIALS -->
+
+  <!-- WORKING HOURS -->
+  <app-working-hours [data]="workingHoursData"></app-working-hours>
+  <!-- END WORKING HOURS -->
+
+  <!-- FOOTER -->
+  <app-footer></app-footer>
+  <!-- END FOOTER -->
+
+</div>

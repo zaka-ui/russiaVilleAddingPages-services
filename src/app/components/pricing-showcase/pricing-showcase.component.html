@@ -1,0 +1,61 @@
+<!-- PRICING SHOWCASE SECTION -->
+<section class="py-60 poudre--shape ct-08 content-section division">
+    <div class="container">
+
+        <!-- SECTION TITLE -->	
+        <div class="row justify-content-center">	
+            <div class="col-md-10 col-lg-8">
+                <div class="section-title mb-60">	
+
+                    <!-- Module Subtitle -->
+                    <span class="module-subtitle color--theme">{{ subtitle }}</span>	
+
+                    <!-- Title -->	
+                    <h2 class="fs-50">{{ title }}</h2>
+
+                    <!-- Text -->	
+                    <p class="fs-17">{{ description }}</p>
+                    
+                </div>	
+            </div>
+        </div>
+
+        <!-- IMAGES WRAPPER -->	
+        <div class="ct-08-img mb-70 text-center">	
+            <div class="row d-flex align-items-center row-cols-1 row-cols-lg-3">
+
+                <!-- SERVICE CARD -->
+                <div *ngFor="let service of services" class="col">
+                    <div [id]="'ct-08-' + service.id" class="ct-08-image">
+                        <div class="hover-overlay r-06"> 
+                            <img class="img-fluid" [src]="service.image" [alt]="service.alt">
+                            <div class="item-overlay"></div>
+                            <div class="img-description color--white">
+                                <div class="image-lnk">
+                                    <h4 class="fs-30"><a [href]="service.link">{{ service.title }}</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>	<!-- END IMAGES WRAPPER -->	
+
+        <!-- SECTION BUTTON -->	
+        <div class="row justify-content-center">	
+            <div class="col-md-11 col-lg-7">
+                <div class="ct-08-txt text-center">	
+                    <a [href]="buttonLink" class="btn r-0 btn--theme">
+                        <span class="btn-txt">
+                            <span class="anim-txt">{{ buttonText }}</span>
+                            <span class="anim-txt">{{ buttonText }}</span>  
+                        </span>
+                    </a>
+                </div>	
+            </div>
+        </div>
+
+    </div>	   <!-- End container -->	
+</section>
+<!-- END PRICING SHOWCASE SECTION -->

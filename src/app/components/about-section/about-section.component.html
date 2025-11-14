@@ -1,0 +1,30 @@
+<section id="about-nails" class="pt-120 ct-01 content-section division">
+  <div class="container">
+    <div class="row d-flex align-items-center">
+
+      <!-- IMAGE BLOCK -->
+      <div class="col-lg-6 order-lg-1">
+        <div class="img-block right-column wow animate__animated animate__fadeInLeft">
+          <img class="img-fluid" [src]="data.image" [alt]="data.imageAlt">
+        </div>
+      </div>
+
+      <!-- TEXT BLOCK -->
+      <div class="col-lg-6 order-lg-2">
+        <div class="txt-block left-column wow animate__animated animate__fadeInRight">
+          <span class="module-subtitle color--theme">{{ data.subtitle }}</span>
+          <h2 class="fs-42" style="font-weight: normal;" [innerHTML]="data.title"></h2>
+          <p [innerHTML]="data.description"></p>
+          <ul class="check-list ico-20 mt-15">
+            <li *ngFor="let checkpoint of data.checkpoints">
+              <p class="fs-17">
+                <span class="flaticon-check-2 color--theme"></span>{{ checkpoint }}
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

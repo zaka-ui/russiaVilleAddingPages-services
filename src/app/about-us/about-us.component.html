@@ -1,0 +1,41 @@
+<div id="page" class="page">
+
+  <!-- HEADER -->
+  <app-header></app-header>
+  <!-- END HEADER -->
+
+  <!-- PAGE HERO -->
+  <app-pricing-hero
+    [title]="'À propos de Russiaville Beauty'"
+    [backgroundImage]="'../../assets/images/about-page.jpg'"
+    [breadcrumbs]="[
+      { label: 'Accueil', url: '/' },
+      { label: 'À propos du salon' }
+    ]">
+  </app-pricing-hero>
+  <!-- END PAGE HERO -->
+
+  <!-- ABOUT SECTION -->
+  <app-about-section [data]="aboutSectionData"></app-about-section>
+  <!-- END ABOUT SECTION -->
+
+  <!-- PRICING SHOWCASE -->
+  <app-pricing-showcase></app-pricing-showcase>
+  <!-- END PRICING SHOWCASE -->
+
+  <!-- SERVICES FEATURES -->
+  <app-services-features [data]="servicesFeaturesData"></app-services-features>
+  <!-- END SERVICES FEATURES -->
+
+  <!-- DIVIDER LINE -->
+  <hr class="divider">
+
+  <!-- CTA BANNER -->
+  <app-cta-banner [data]="ctaBannerData"></app-cta-banner>
+  <!-- END CTA BANNER -->
+
+  <!-- FOOTER -->
+  <app-footer></app-footer>
+  <!-- END FOOTER -->
+
+</div>

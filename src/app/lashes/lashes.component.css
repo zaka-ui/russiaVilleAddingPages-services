@@ -1,0 +1,37 @@
+::ng-deep #pricing-page.page-hero-section {
+    background-image: url(../../assets/images/clis-page.png);
+}
+
+::ng-deep h3.price-category {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+
+::ng-deep h3.price-category.Manicure {
+
+    margin-top: 0rem;
+}
+
+.price-name p, .price-number p {
+    font-family: 'Quicksand' !important;
+}
+
+.review-2 h6, .review-3 h6
+
+ {
+font-family: 'Quicksand' !important;
+ }
+
+ .review-2 .review-txt p {
+    font-family: 'Quicksand' !important;
+ }
+
+ .review-author span
+ {
+    font-family: 'Quicksand' !important;
+ }
+
+ .module-subtitle {
+    font-family: 'Quicksand' !important;
+ }

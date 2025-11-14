@@ -1,0 +1,11 @@
+::ng-deep .desktoplogo img, .wscenterlogo img {
+    width: auto;
+    max-width: inherit;
+    max-height: 80px ;
+}
+@media (min-width: 414px) and (max-width: 479.98px) {
+    ::ng-deep .smllogo img, .cntr-menu .smllogo img {
+        max-height: 50px !important;
+    }
+}
+

@@ -1,0 +1,16 @@
+<div class="accordion" *ngFor="let item of accordionData; let i = index">
+  <button class="accordion-header" (click)="toggle(i)">
+    <span>{{ item.title }}</span>
+    <span class="icon">{{ isOpen[i] ? '−' : '+' }}</span>
+  </button>
+
+  <div #body class="accordion-body">
+    <ul>
+      <li *ngFor="let point of item.points">
+       <span>✦</span> {{ point }}
+      </li>
+    </ul>
+    <p>{{item.smallDesc}}</p>
+  </div>
+
+</div>

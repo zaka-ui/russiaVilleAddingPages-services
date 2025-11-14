@@ -1,0 +1,70 @@
+
+::ng-deep h3.price-category {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+
+
+.review-2 h6, .review-3 h6
+
+ {
+font-family: 'Quicksand' !important;
+ }
+
+ .review-2 .review-txt p {
+    font-family: 'Quicksand' !important;
+ }
+
+ .review-author span
+ {
+    font-family: 'Quicksand' !important;
+ }
+
+ .module-subtitle {
+    font-family: 'Quicksand' !important;
+ }
+
+
+
+ .sbox-2 h5, .sbox-3 h5, .sbox-4 h5, .sbox-5 h5 {
+    font-family: 'Quicksand' !important;
+ }
+
+ .sbox-2 p, .sbox-3 p, .sbox-4 p, .sbox-5 p {
+    font-family: 'Quicksand' !important;
+ }
+
+ ::ng-deep .wsmenu > .wsmenu-list > li > a {
+    font-family: 'Antan Angella';
+ }
+
+ .faqs-section .accordion-thumb h5 {
+    font-family: 'Quicksand' !important;
+ }
+
+ .btn .btn-txt .anim-txt {
+    font-family: 'Quicksand' !important;
+ }
+
+.price-name p, .price-number p {
+    font-family: 'Quicksand' !important;
+}
+
+@media (max-width: 768px) {
+.col-lg-6.order-lg-1 {
+    margin-bottom: 1rem !important;
+}
+}
+
+p  {
+    font-family: 'Quicksand' !important;
+}
+
+strong {
+    font-family: 'Quicksand' !important;
+}
+
+.btn .btn-txt .anim-txt {
+    font-family: 'Quicksand' !important;
+}

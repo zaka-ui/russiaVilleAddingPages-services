@@ -1,0 +1,32 @@
+<section class="gallery-3 gallery-section">
+  <div class="container-fluid">
+    <div class="gallery-3-wrapper">
+
+      <!-- INSTAGRAM LINK -->
+      <a href="https://www.instagram.com/" class="instagram-link" target="_blank">
+        <div class="follow-link-wrapper r-06">
+          <div class="follow-link">
+            <h3 class="fs-28">Suivez-nous sur Instagram&nbsp;:</h3>
+            <span class="main-font">{{ data.instagramHandle }}</span>
+          </div>
+        </div>
+      </a>	<!-- END INSTAGRAM LINK -->
+
+      <!-- IMAGES GRID -->
+      <div class="row row-cols-4 row-cols-sm-4 row-cols-md-4 row-cols-lg-6 images">
+
+        <!-- IMAGE -->
+        <div *ngFor="let image of data.images" class="col">
+          <div [id]="image.id" class="gallery-image">
+            <div class="hover-overlay"> 
+              <img class="img-fluid" [src]="image.src" alt="gallery-image">			
+              <div class="item-overlay"></div>				
+            </div>
+          </div>
+        </div>	<!-- END IMAGE -->
+
+      </div>	<!-- END IMAGES GRID -->
+
+    </div>	  <!-- END IMAGES WRAPPER -->
+  </div>	   <!-- End container -->
+</section>

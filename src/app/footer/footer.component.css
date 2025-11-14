@@ -1,0 +1,35 @@
+@media (min-width: 414px) and (max-width: 479.98px) {
+    ::ng-deep img.img-fluid.russia {
+        text-align: center;
+    }
+
+    ::ng-deep .d-flex {
+    display: block !important;
+    }
+}
+
+.footer h5 {
+    font-family: 'Quicksand' !important;
+}
+.footer-form p {
+    font-family: 'Quicksand' !important;
+}
+.footer-copyright p {
+    font-family: 'Quicksand' !important;
+}
+ul.foo-links.clearfix li a {
+    font-family: 'Quicksand' !important;
+}
+
+.footer-6 .footer-contacts p.mb-10 {
+    font-family: 'Quicksand' !important;
+}
+.footer p.footer-phone a, .footer p.footer-email a {
+    font-family: 'Quicksand' !important;
+}
+p  {
+    font-family: 'Quicksand' !important;
+}
+.footer a {
+    font-family: 'Quicksand' !important;
+}

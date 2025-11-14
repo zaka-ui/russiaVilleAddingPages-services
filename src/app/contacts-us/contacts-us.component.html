@@ -1,0 +1,137 @@
+<div id="page" class="page">
+
+            <!-- HEADER ============================================= -->
+            <app-header></app-header>
+            <!-- END HEADER -->
+ <!-- PAGE HERO -->
+  <app-pricing-hero
+    [title]="'Contactez-nouss'"
+    [backgroundImage]="'../../assets/images/contact-page.jpg'"
+    [breadcrumbs]="[
+      { label: 'Accueil', url: '/' },
+      { label: 'Contactez-nous' }
+    ]">
+  </app-pricing-hero>
+  <!-- END PAGE HERO -->
+
+            <!-- CONTACT ============================================= -->
+            <section class="pt-120 pb-70 contact-1 contact-section division">				
+                <div class="container">
+
+                    <!-- CONTACT WRAPPER -->
+                    <div class="contact-1-wrapper">
+                        <div class="row">
+
+                            <!-- CONTACT INFO -->
+                            <div class="col-md-5 col-lg-4">
+
+                                <!-- LOCATION -->
+                                <div class="cbox-1 cbox-location">
+
+                                    <!-- Title -->	
+                                    <h5 class="fs-23">Notre adresse :</h5>
+
+                                    <!-- Address -->	
+                                    <p>Avenue Yaacoub Almansour centre d'affaire Sara Guéliz,</p>
+                                    <p>5e étage porte 25, Marrakech</p>        </div>
+
+                                <!-- CONTACTS -->
+                                <div class="cbox-1 cbox-contacts">
+
+                                    <!-- Title -->	
+                                    <h5 class="fs-23">Nous contacter</h5>
+
+                                    <p style="color: #6c757d;"><a href="tel:+212657570777" style="color: #6c757d;">+212 6 57 57 07 77</a></p>
+                                    <p style="color: #6c757d;"><a href="mailto:yourdomain&#64;mail.com" style="color: #6c757d;">contact&#64;russiavillebeauty.ma</a></p>
+
+                                </div>
+
+                                <!-- WORKING HOURS -->
+                                <div class="cbox-1 cbox-hours">
+
+                                    <!-- Title -->	
+                                    <h5 class="fs-23">Horaires d&#39;ouverture :</h5>
+                                    <!-- Text -->	
+                                    <p><span>Lun – Jeu</span> : 10h00 - 19h30</p>
+                                    <p><span>Vendredi</span> : 11h00 - 18h30</p>
+                                    <p><span>Samedi - Dima </span> : 10h00 - 18h00</p>
+
+                                </div>
+
+                            </div>	<!-- END CONTACT INFO -->
+
+                            <!-- CONTACT FORM -->	
+                            <div class="col-md-7 col-lg-8">
+                                <div class="contact-form-wrapper">
+
+                                    <!-- Title -->	
+                                    <h5 class="fs-23">Envoyer un message</h5>
+
+                                    <form name="contactform" class="row contact-form r-0">
+                                                                                                    
+                                        <!-- Form Input -->
+                                        <div class="col-lg-6">
+                                            <input type="text" name="name" class="form-control name" placeholder="Votre nom*" autocomplete="off"> 
+                                        </div>
+                                          
+                                        <!-- Form Input -->        
+                                        <div class="col-lg-6">
+                                            <input type="email" name="email" class="form-control email" placeholder="Adresse e-mail*" autocomplete="off"> 
+                                        </div>
+
+                                        <!-- Form Input -->   
+                                        <div class="col-md-12">
+                                            <input type="text" name="subject" class="form-control subject" placeholder="Sujet" autocomplete="off"> 
+                                        </div>
+            
+                                        <!-- Form Textarea -->	        
+                                        <div class="col-md-12">
+                                            <textarea name="message" class="form-control message" rows="6" placeholder="Votre message ..." autocomplete="off"></textarea>
+                                        </div> 
+                                                                    
+                                        <!-- Form Button -->
+                                        <div class="col-md-12 form-btn text-end">  
+                                            <button type="submit" class="btn r-0 btn--theme submit">
+                                                <span class="btn-txt">
+                                                    <span class="anim-txt">Envoyer</span>
+                                                    <span class="anim-txt">Envoyer</span>  
+                                                </span>
+                                            </button> 
+                                        </div>
+                                                                                      
+                                        <!-- Form Message -->
+                                        <div class="col-md-12 contact-form-msg">
+                                            <div class="sending-msg"><span class="loading"></span></div>
+                                        </div>	
+                                                                                                    
+                                    </form>	
+                                </div>
+                            </div>	<!-- END CONTACT FORM -->	
+
+                        </div>	<!-- End row -->
+                    </div>	<!-- END CONTACT WRAPPER -->
+
+                </div>     <!-- End container -->	
+            </section>	<!-- END CONTACT -->
+
+            <!-- GOOGLE MAP ============================================= -->
+            <div class="gmap-1 contact-section division">				
+                <div class="container">
+
+                    <!-- GOOGLE MAP -->	
+                    <div class="row">
+                        <div class="col">
+                            <div class="google-map r-06">
+<iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d212.30397182381444!2d-8.009988075302202!3d31.63758620326944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d31.6375089!2d-8.009858!4m3!3m2!1d31.637536299999997!2d-8.009986699999999!5e0!3m2!1sfr!2sma!4v1754646565730!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                            </div>
+                        </div>
+                    </div>	<!-- END GOOGLE MAP -->	
+
+                </div>     <!-- End container -->	
+            </div>	<!-- END GOOGLE MAP -->
+
+            <!-- FOOTER ============================================= -->
+            <app-footer></app-footer>	
+            <!-- END FOOTER -->
+
+        </div>
+

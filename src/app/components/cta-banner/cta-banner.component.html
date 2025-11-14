@@ -1,0 +1,28 @@
+<section class="bg--02 bg--scroll py-110 banner-5 banner-section division" [style.backgroundImage]="'url(' + (data.backgroundImage || 'assets/images/gallery/18.png') + ')'">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-11 col-lg-12">
+				<div class="banner-5-txt color--white text-center">
+
+					<!-- Module Subtitle -->
+					<span class="module-subtitle">{{ data.subtitle }}</span>	
+
+					<!-- Title -->
+					<h2 class="fs-62" [innerHTML]="data.title"></h2>
+
+					<!-- Text -->
+					<p class="fs-17" [innerHTML]="data.description"></p>
+ 
+					<!-- Button -->
+					<a [href]="data.buttonLink" class="btn r-0 btn--theme">
+						<span class="btn-txt">
+							<span class="anim-txt">{{ data.buttonText }}</span>
+							<span class="anim-txt">{{ data.buttonText }}</span>  
+						</span>
+					</a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

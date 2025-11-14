@@ -1,0 +1,18 @@
+<div class="py-40 loop-txt b-border">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+
+        <!-- TEXT CAROUSEL -->
+        <div class="loop_carousel_txt main-font color--black">
+          <ng-container *ngFor="let item of loopItems">
+            <span class="carousel_txt fs-30" [innerText]="item"></span>
+            <span class="carousel_txt"><span class="flaticon-sparkle"></span></span>
+          </ng-container>
+        </div>
+        <!-- END TEXT CAROUSEL -->
+
+      </div> <!-- End col -->
+    </div> <!-- End row -->
+  </div> <!-- End container -->
+</div>

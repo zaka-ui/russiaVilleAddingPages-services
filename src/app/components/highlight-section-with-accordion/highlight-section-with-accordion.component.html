@@ -1,0 +1,39 @@
+<section class="ct-07 content-section">
+  <div class="container poudre--shape">
+    <div class="row d-flex align-items-center">
+
+      <!-- TEXT BLOCK -->
+      <div [class]="data.imagePosition === 'right' ? 'col-lg-6 order-last order-lg-2' : 'col-lg-6 order-lg-1'">
+        <div class="txt-block left-column wow animate__animated animate__fadeInUp">
+
+          <!-- Module Subtitle -->
+          <span class="module-subtitle color--theme">{{ data.subtitle }}</span>
+
+          <!-- Title -->
+          <h2 class="fs-42" [innerHTML]="data.title"></h2>
+
+          <!-- Text -->
+          <p [innerHTML]="data.text"></p>
+
+          <!-- LISTE -->
+          <ul class="check-list ico-20 mt-15">
+            <li *ngIf="data.features">
+              <app-see-more [accordionData]="data.features" ></app-see-more>
+            </li>
+          </ul>
+           <!-- LISTE -->
+        <span *ngIf="data.conseil">{{data.conseil}}</span>
+        </div>
+      </div>
+      <!-- END TEXT BLOCK -->
+
+      <!-- IMAGE BLOCK -->
+      <div [class]="data.imagePosition === 'right' ? 'col-lg-6 order-first order-lg-2' : 'col-lg-6 order-lg-2'">
+        <div class="ct-07-img right-column wow animate__animated animate__zoomIn">
+          <img class="img-fluid" [src]="data.image" [alt]="data.imageAlt">
+        </div>
+      </div>
+
+    </div> <!-- End row -->
+  </div> <!-- End container -->
+</section>

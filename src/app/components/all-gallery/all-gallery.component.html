@@ -1,0 +1,33 @@
+<section class="gallery-4 gallery-section division">
+  <div class="container">
+    <!-- IMAGES WRAPPER -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+      <div class="col" *ngFor="let image of images">
+        <div class="gallery-image">
+          <a class="image-link" [href]="image.src">
+            <div class="hover-overlay r-06">
+              <img class="img-fluid" [src]="image.src" [alt]="image.alt">
+              <div class="item-overlay"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- END IMAGES WRAPPER -->
+
+    <!-- INSTAGRAM LINK -->
+    <div class="row">
+      <div class="col">
+        <div class="more-btn">
+          <a [href]="instagramLink" class="btn r-0 btn-md btn--theme">
+            <span class="btn-txt">
+              <span class="anim-txt">Visit Our Instagram</span>
+              <span class="anim-txt">Visit Our Instagram</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- END INSTAGRAM LINK -->
+  </div>
+</section>

@@ -1,0 +1,54 @@
+<section class="pt-50 ct-05 content-section">
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- IMAGE BLOCK GAUCHE -->
+      <div class="col">
+        <div id="ct-5-1" class="ct-05-img">
+          <img class="img-fluid r-06" [src]="data.leftImage.src" [alt]="data.leftImage.alt">
+        </div>
+      </div>
+
+      <!-- TEXTE PRINCIPAL -->
+      <div class="col-md-8 col-lg-7 order-first order-md-1">
+        <div class="txt-block">
+
+          <!-- Sous-titre -->
+          <span class="module-subtitle color--theme">{{ data.subtitle }}</span>
+
+          <!-- Titre -->
+          <h2 class="fs-48" [innerHTML]="data.title"></h2>
+
+          <!-- Paragraphe -->
+          <p [innerHTML]="data.description"></p>
+          
+          <div *ngIf="accordionData">
+            <app-see-more [accordionData]="accordionData"></app-see-more>
+          </div>
+          
+          <!-- Bouton -->
+          <a [href]="data.buttonLink" class="btn r-0 btn--theme">
+            <span class="btn-txt">
+              <span class="anim-txt">{{ data.buttonText }}</span>
+              <span class="anim-txt">{{ data.buttonText }}</span>
+            </span>
+          </a>
+
+          <!-- Image intégrée -->
+          <div id="ct-5-2" class="ct-05-img">
+            <img class="img-fluid r-06" [src]="data.embeddedImage.src" [alt]="data.embeddedImage.alt">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- IMAGE BLOCK DROITE -->
+      <div class="col order-last order-md-2">
+        <div id="ct-5-3" class="ct-05-img">
+          <img class="img-fluid r-06" [src]="data.rightImage.src" [alt]="data.rightImage.alt">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

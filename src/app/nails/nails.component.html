@@ -1,0 +1,36 @@
+<div id="page" class="page">
+
+  <!-- HEADER -->
+  <app-header></app-header>
+  <!-- END HEADER -->
+
+  <!-- PAGE HERO -->
+  <app-pricing-hero
+    [title]="'Menu Salon Pour Ongles'"
+    [backgroundImage]="'../../assets/images/pricing-page.jpg'"
+    [breadcrumbs]="[
+      { label: 'Accueil', url: '/' },
+      { label: 'Tarifs' },
+      { label: 'Ongles', url: '/tarifs/ongles' }
+    ]">
+  </app-pricing-hero>
+  <!-- END PAGE HERO -->
+
+  <!-- PRICING SECTION -->
+  <app-pricing [data]="pricingDataOngles"></app-pricing>
+  <!-- END PRICING SECTION -->
+
+  <!-- TESTIMONIALS -->
+  <app-reviews-bgs [data]="reviewsData"></app-reviews-bgs>
+  <!-- END TESTIMONIALS -->
+
+  
+  <!-- WORKING HOURS -->
+  <app-working-hours [data]="workingHoursData"></app-working-hours>
+  <!-- END WORKING HOURS -->
+
+  <!-- FOOTER -->
+  <app-footer></app-footer>
+  <!-- END FOOTER -->
+
+</div>

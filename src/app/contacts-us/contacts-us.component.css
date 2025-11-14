@@ -1,0 +1,25 @@
+#contact-page.page-hero-section {
+    background-image: url(../../assets/images/contact-page.jpg);
+}
+
+
+input.form-control.name , input.form-control.email, input.form-control.subject, textarea.form-control.message {
+        border-radius: 0.5rem;
+}
+
+::ng-deep .cbox-1 p {
+    line-height: 1.5 !important ;
+
+}
+
+.cbox-1 p {
+    font-family: 'Quicksand' !important;
+}
+
+a {
+    font-family: 'Quicksand' !important;
+}
+
+.cbox-1 p span {
+    font-family: 'Quicksand' !important;
+}

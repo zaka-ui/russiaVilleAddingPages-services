@@ -1,0 +1,133 @@
+/* .hero-3-txt h2 {
+    font-weight: normal;
+} */
+
+.img-fluid {
+   border-radius: 2rem;
+}
+
+/* Animation de fade (au cas où animate.css n’est pas inclus) */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ct-07.content-section {
+  padding: 80px 0;
+}
+
+.ct-07-img img {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.txt-block h2 {
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.txt-block p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.check-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.check-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.check-list .flaticon-check-2 {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #ec73a9; /* rose personnalisé */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .txt-block h2 {
+    font-size: 28px;
+  }
+  .txt-block p {
+    font-size: 16px;
+  }
+  .ct-07.content-section {
+    padding: 50px 0;
+  }
+}
+
+
+::ng-deep .images img.img-fluid {
+    border-radius: 0rem;
+}
+
+
+p.fs-17 {
+      font-family: 'Quicksand' !important;
+}
+
+strong {
+    font-family: 'Quicksand' !important;
+}
+
+span.anim-txt {
+    font-family: 'Quicksand' !important;
+}
+
+span.module-subtitle.color--theme {
+    font-family: 'Quicksand' !important;
+}
+
+p{
+    font-family: 'Quicksand' !important;
+}
+
+
+@media (min-width: 321px) and (max-width: 389.98px) {
+    .hero-3-txt h2 {
+        font-size: 3.6rem !important;
+        letter-spacing: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-lg-6.order-lg-2 {
+     
+        text-align: center;
+
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .txt-block p {
+        text-align: left;
+    }
+}
+
+
+@media (min-width: 321px) and (max-width: 389.98px) {
+    .fs-23, .fs-24, .fs-25, .fs-26 {
+        font-size: 1rem;
+        
+    }
+     .fs-25{
+        font-size: 1.5rem;
+     }
+
+}
+
+

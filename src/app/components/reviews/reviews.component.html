@@ -1,0 +1,49 @@
+<div id="reviews" class="pt-120 pb-110 reviews-1 reviews-section division">
+  <div class="container">
+
+    <!-- SECTION TITLE -->
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-10">
+        <div class="section-title mb-70">
+          <!-- Module Subtitle -->
+          <span class="module-subtitle color--theme">{{ data.subtitle }}</span>
+
+          <!-- Title -->
+          <h2 class="fs-50" style="font-weight: 700;" [innerHTML]="data.title"></h2>
+
+          <!-- Text -->
+          <p class="fs-16" [innerHTML]="data.description"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <div class="row">
+      <div class="col">
+        <div class="owl-carousel owl-theme reviews-carousel">
+
+          <!-- AVIS -->
+          <div *ngFor="let review of data.reviews" class="review-1">
+            <div class="review-wrapper">
+              <div class="star-rating ico-20 color--yellow clearfix">
+                <span *ngFor="let star of getRating(review.stars)" class="flaticon-star"></span>
+                <span *ngIf="getHalfStar(review.stars)" class="flaticon-star-half-empty"></span>
+              </div>
+              <div class="review-txt">
+                <p>{{ review.text }}</p>
+              </div>
+              <div class="review-avatar">
+                <img [src]="review.avatar" [alt]="review.author">
+              </div>
+              <div class="review-author">
+                <p>{{ review.author }}</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,206 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+::ng-deep .btn {
+        border-radius: 2rem !important;
+}
+
+a.btn {
+            border-radius: 2rem !important;
+
+}
+
+
+@font-face {
+  font-family: 'Antan Angella';
+  src: url('assets/fonts/anton.ttf') format('truetype'); /* or format('opentype') */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Angella';
+  src: url('assets/fonts/AngellaWhitePersonalUseFont-ywA8e.otf') format('truetype'); /* or format('opentype') */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  font-family: 'Antan Angella';
+}
+
+.price-name p , .price-name p, .price-number p {
+
+  font-weight: normal; 
+
+}
+.price-name p, .price-number p {
+ font-weight: normal;
+}
+
+.review-author p {
+ font-weight: normal;
+
+
+}
+
+
+.wsmenu > .wsmenu-list > li > a
+ {
+    font-size: 18px;
+
+ }
+
+
+ :root {
+    --main-font: "Antan Angella";
+    --base-font: 'Angella';
+
+ }
+
+
+ .hero-3-txt h1 {
+    font-size: var(--titleSize, 7rem);
+ }
+
+
+ /* .hero-3-txt h2 {
+    font-weight: normal;
+} */
+
+.img-fluid {
+   border-radius: 2rem;
+}
+
+/* Animation de fade (au cas où animate.css n’est pas inclus) */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ct-07.content-section {
+  padding: 80px 0;
+}
+
+.ct-07-img img {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.txt-block h2 {
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.txt-block p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.check-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.check-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.check-list .flaticon-check-2 {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #ec73a9; /* rose personnalisé */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .txt-block h2 {
+    font-size: 28px;
+  }
+  .txt-block p {
+    font-size: 16px;
+  }
+  .ct-07.content-section {
+    padding: 50px 0;
+  }
+}
+
+
+::ng-deep .images img.img-fluid {
+    border-radius: 0rem;
+}
+
+
+p.fs-17 {
+      font-family: 'Quicksand' !important;
+}
+
+strong {
+    font-family: 'Quicksand' !important;
+}
+
+span.anim-txt {
+    font-family: 'Quicksand' !important;
+}
+
+span.module-subtitle.color--theme {
+    font-family: 'Quicksand' !important;
+}
+
+p{
+    font-family: 'Quicksand' !important;
+}
+
+
+@media (min-width: 321px) and (max-width: 389.98px) {
+    .hero-3-txt h2 {
+        font-size: 3.6rem !important;
+        letter-spacing: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-lg-6.order-lg-2 {
+     
+        text-align: center;
+
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .txt-block p {
+        text-align: left;
+    }
+}
+
+
+@media (min-width: 321px) and (max-width: 389.98px) {
+    .fs-23, .fs-24, .fs-25, .fs-26 {
+        font-size: 1rem;
+        
+    }
+     .fs-25{
+        font-size: 1.5rem;
+     }
+
+}
+
+
+
+
+
+
+
+/**** accordiond data  basic style ****/

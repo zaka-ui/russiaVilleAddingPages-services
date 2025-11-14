@@ -1,0 +1,30 @@
+<section class="py-120 services-5 services-section division">
+	<div class="container">
+
+		<!-- SERVICES WRAPPER -->
+		<div class="sbox-5-wrapper text-center">
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+
+				<!-- SERVICES BOX -->
+				<div *ngFor="let box of data.boxes" class="col">
+					<div [id]="box.id" class="sbox-5 wow animate__animated animate__fadeInUp" [ngClass]="'animate__' + box.delay">
+						
+						<!-- Icon -->
+						<div class="sbox-ico ico-65 color--coal">
+							<span [ngClass]="box.icon"></span>
+						</div> 
+
+						<!-- Title -->
+						<h5 class="fs-23" [innerHTML]="box.title"></h5>
+
+						<!-- Text -->
+						<p [innerHTML]="box.text"></p>
+														
+					</div>							
+				</div>	
+
+			</div>  <!-- End row -->
+		</div>	<!-- END SERVICES WRAPPER -->
+
+	</div>	   <!-- End container -->
+</section>

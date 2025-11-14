@@ -1,0 +1,26 @@
+<div class="py-120 statistic-1 statistic-section division">
+  <div class="container">
+    <div class="statistic-1-wrapper text-center">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+
+        <!-- STATISTIC BLOCK -->
+        <div *ngFor="let block of data.blocks; let i = index" class="col">						
+          <div [id]="'stb-1-' + (i+1)" class="wow animate__animated animate__fadeInUp" [ngClass]="{'animate__delay-2': i === 0, 'animate__delay-3': i === 1, 'animate__delay-4': i === 2, 'animate__delay-5': i === 3}">
+            <div [ngClass]="{'statistic-block': true, 'rel': i !== 0}">
+
+              <!-- Chiffre -->
+              <h2 class="fs-62 ls-1px statistic-number">
+                <span class="count-element">{{ block.number }}</span><small *ngIf="block.suffix">{{ block.suffix }}</small>
+              </h2>	
+
+              <!-- Texte -->
+              <p class="fs-18 color--black">{{ block.label }}</p>
+
+            </div>
+          </div>						
+        </div>	<!-- END STATISTIC BLOCK -->
+
+      </div>    <!-- Fin row -->
+    </div>    <!-- Fin statistic-wrapper -->
+  </div>	 <!-- Fin container -->		
+</div>

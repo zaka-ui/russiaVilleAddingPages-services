@@ -1,0 +1,58 @@
+<section id="working-hours" class="ct-04 pt-60 content-section">
+  <div class="container">
+
+    <!-- CONTENT BOX -->
+    <div class="ct-04-wrapper">
+      <div class="ct-04-txt r-06 wow animate__animated animate__fadeInUp animate__delay-2">
+
+        <!-- Title -->	
+        <h4 class="fs-28">{{ data.title }}</h4>
+
+        <div class="txt-table right-column wow fadeInLeft">
+          <table class="table">
+            <tbody>
+              <tr *ngFor="let hour of data.hours; let isLast = last" [ngClass]="{'last-tr': isLast}">
+                <td>{{ hour.day }}</td>
+                <td> - </td>
+                <td class="text-end">{{ hour.time }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Button -->	
+        <div class="ct-04-btn text-center">
+          <a [href]="data.buttonLink" class="btn r-0 btn--theme">
+            <span class="btn-txt">
+              <span class="anim-txt">{{ data.buttonText }}</span>
+              <span class="anim-txt">{{ data.buttonText }}</span>  
+            </span>
+          </a>
+        </div>
+
+      </div>
+    </div>	<!-- END CONTENT BOX -->
+
+    <!-- IMAGES -->
+    <div class="ct-4-img">
+      <div class="row d-flex align-items-center">
+
+        <!-- IMAGE BLOCK -->
+        <div id="ct-04-left" class="col-sm-7 col-lg-6">
+          <div class="img-block wow animate__animated animate__fadeInRight">
+            <img class="img-fluid r-06" [src]="data.leftImage" alt="working hours image">
+          </div>
+        </div>
+
+        <!-- IMAGE BLOCK -->
+        <div id="ct-04-right" class="col-sm-5 col-lg-5 offset-lg-1">
+          <div class="img-block wow animate__animated animate__fadeInLeft">
+            <img class="img-fluid r-06" [src]="data.rightImage" alt="working hours image">
+          </div>
+        </div>
+
+      </div>
+    </div>   <!-- END IMAGES -->
+
+  </div>	   <!-- End container -->
+</section>
