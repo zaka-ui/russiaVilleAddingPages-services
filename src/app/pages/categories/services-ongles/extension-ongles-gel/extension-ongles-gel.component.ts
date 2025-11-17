@@ -13,7 +13,7 @@ export class ExtensionOnglesGelComponent {
                         slides: Array<any> = [
                           {
                             title:
-                              'Manucure semi-permanente Marrakech',
+                              'Extension ongles gel Marrakech',
                             subtitle: '',
                             description: `
                                           Beaucoup de clientes de Guéliz, Majorelle et Hivernage viennent nous voir parce qu’elles veulent des sourcils disciplinés, qui tiennent toute la journée malgré la chaleur de Marrakech. Le brow lamination Marrakech aide à redresser les poils, remplir les zones clairsemées et structurer le regard sans maquillage.
@@ -26,67 +26,60 @@ export class ExtensionOnglesGelComponent {
                         slideImage: string =
                           'assets/images/extension_de_cils/Extension-cil-a-cil.jpg.webp';
                         slideImageAlt: string =
-                          'Manucure semi-permanente Marrakech';
+                          'Extension ongles gel Marrakech';
                       
                         /****  Lopp Section ***/
-                        items: string[] = ['Résultat ultra net'];
+                        items: string[] = ['Finition fine, propre et impeccable'];
                       
                         // Section 3 service with accordionds
                         servicesAbout: ServiceAbout | any = {
-                          id: 'Manucure semi-permanente Marrakech',
+                          id: 'Extension ongles gel Marrakech',
                           subtitle: '',
                           title: 'Comment se déroule la prestation',
-                          description : "Chez nous, chaque manucure semi-permanente suit un protocole précis :",
                           features: [
                             {
-                              title: '1.  Préparation douce des ongles',
+                              title: '1. Préparation de l’ongle',
                               points: [
-                                'On nettoie et prépare l’ongle délicatement pour garantir une pose propre et durable.',
+                                'L’ongle est nettoyé, matifié et préparé pour assurer une excellente adhérence du gel.',
                               ],
                               smallDesc: '',
                             },
                             {
-                              title: '2. Retrait des cuticules sans douleur',
+                              title: '2. Pose du chablon ou capsule',
                               points: [
-                                'Les cuticules sont repoussées et retirées avec précision pour un contour net et soigné.',
+                                'Selon votre ongle, on place un chablon ou une capsule pour créer une extension solide et parfaitement alignée.',
                               ],
                               smallDesc: '',
                             },
                             {
-                              title: '3. Mise en forme selon vos préférences',
+                              title: '3. Construction en gel sculpté',
                               points: [ 
-                                'Carré, rond, amande ou oval : la forme est adaptée à votre style et à votre morphologie d’ongle.', 
+                                'Le gel est sculpté avec précision pour former une extension résistante, fine et élégante.', 
                                       ],
                               smallDesc: '',
                             },
                             {
-                              title: '4. Base protectrice',
+                              title: '4. Mise en forme adaptée à votre style',
                               points: [
-                                'Une base de qualité est appliquée pour renforcer l’ongle et assurer une tenue longue durée.',
+                                'Carré, amande, ballerine, coffin : la forme est travaillée selon vos goûts et la structure de vos doigts.',
                               ],
                               smallDesc: '',
                             },
                             {
-                              title: '5. Application du vernis semi-permanent en fines couches',
+                              title: '5. Application couleur ou French',
                               points: [
-                                'Plusieurs couches fines garantissent une couleur uniforme, élégante et sans épaisseur excessive.',
+                                'Vous choisissez une teinte, un French classique ou un effet naturel selon votre style.',
                               ],
                               smallDesc: '',
                             },
                             {
-                              title: '6. Catalysation LED',
+                              title: '6. Finition brillante ou mate',
                               points: [
-                                'Chaque couche est durcie sous lampe LED pour une tenue optimale de 2 à 3 semaines.',
+                                'Une finition au choix scelle le gel pour un résultat durable, net et parfaitement lisse.',
                               ],
                               smallDesc: '',
                             },
-                            {
-                              title: '6. Finition brillante ultra-résistante',
-                              points: [
-                                'Une couche finale scelle la couleur et offre une brillance durable, résistante aux chocs et à la chaleur.',
-                              ],
-                              smallDesc: '',
-                            }
+                            
                           ],
                           image: 'assets/images/extension_de_cils/extension1d.png',
                           imageAlt: 'Manucure semi-permanente Marrakech',
@@ -101,68 +94,68 @@ export class ExtensionOnglesGelComponent {
                           title: 'Avantages :',          
                           features: [
                             {
-                              title: 'Tenue 2 à 3 semaines sans s’écailler',
-                              points: ['Le semi-permanent garde une surface lisse et intacte pendant plusieurs semaines, même avec un rythme de vie actif.'],
+                              title: 'Résultat solide et élégant',
+                              points: ['Les extensions en gel offrent une structure résistante tout en gardant une apparence fine et raffinée.'],
                               smallDesc: '',
                             },
                             {
-                              title: 'Brillance durable sous la chaleur',
-                              points: ['La finition reste lumineuse et propre, même en plein été à Marrakech, sans ternir ni ramollir.'],
+                              title: 'Idéal pour les ongles cassants ou courts',
+                              points: ['Le gel renforce les ongles fragiles et permet d’obtenir immédiatement la longueur que vous souhaitez.'],
                               smallDesc: '',
                             },
                             {
-                              title: 'Large choix de couleurs tendance',
-                              points: ['Des teintes classiques aux couleurs modernes : vous trouvez toujours la nuance qui correspond à votre style.'],
+                              title: 'Longue tenue malgré la chaleur',
+                              points: ['Même avec la chaleur de Marrakech, le gel reste stable, sans fissures ni décollement.'],
                               smallDesc: '',
                             },
                             {
-                              title: 'Technique douce qui protège vos ongles',
-                              points: ['La pose est réalisée sans abraser l’ongle, pour maintenir sa santé tout en offrant une tenue renforcée.'],
+                              title: 'Toutes les formes possibles : carré, amande, coffin, long ou court',
+                              points: ['La technique permet de créer exactement la forme et la longueur que vous aimez, avec une grande précision.'],
                               smallDesc: '',
                             },
                             {
-                              title: 'Idéal pour travail, soirées, mariages, tourisme',
-                              points: ['Parfait pour un look soigné en toutes circonstances : bureau, événements, vacances ou shooting.'],
+                              title: 'Compatible avec le nail art Marrakech',
+                              points: ['Strass, motifs, dessin fin ou effet naturel : les extensions en gel accueillent parfaitement toutes les créations artistiques.'],
                               smallDesc: '',
                             },    
                           ],
                           image: 'assets/images/sourcils/5.jpg',
-                          imageAlt: 'Avantages de manucure semi-permanente Marrakech',
+                          imageAlt: 'Avantages d\'extension ongles gel Marrakech',
                           imagePosition: 'right',
                           conseil: '',
                         };
                       
                         faqData: ServiceAbout | any = {
-                          id: 'restructuration-de-sourcils-lamination',
+                          id: 'Extension ongles gel Marrakech',
                           subtitle: '',
                           title: 'Questions fréquentes',
                           description: ``,
                           features: [
                             {
-                              title: '“Est-ce que ça abîme les ongles ?”',
+                              title: '“Ça tient combien de temps ?”',
                               points: [
-                                'Non, si la dépose est faite correctement. Nous évitons tout grattage agressif.',
+                                '3 à 4 semaines selon la repousse.',
                               ],
                               smallDesc: '',
                             },
                             {
-                              title: '“Est-ce que ça tient bien avec la chaleur de Marrakech ?”',
+                              title: 'Est-ce que ça fait mal ?',
                               points: [
-                                'Oui, grâce à une base et un top adaptés au climat sec.',
+                                'Non, nous utilisons une technique douce sans chauffe.',
                               ],
                               smallDesc: '',
                             },
                              {
-                              title: '“Puis-je faire du sport ou piscine ?”',
+                              title: 'Je peux choisir la longueur ?',
                               points: [
-                                'Oui, aucune gêne.',
+                                ' Oui, du naturel au long glamour.',
                               ],
                               smallDesc: '',
                             },
                             
                           ],
                           image: 'assets/images/sourcils/5.png',
-                          imageAlt: 'Manucure semi-permanente Marrakech faq',
+                          imageAlt: 'Extension ongles gel Marrakech faq',
                           imagePosition: 'left',
                           conseil: '',
                         };
@@ -174,11 +167,10 @@ export class ExtensionOnglesGelComponent {
                             subtitle: '',
                             title: 'Pourquoi notre salon',
                             features: [
-                              'Protocole précis : Chaque étape suit une méthode rigoureuse pour garantir une pose uniforme, stable et parfaitement réalisée.',
-                              'Hygiène stricte : Le matériel est désinfecté et stérilisé entre chaque cliente, pour une expérience sûre et irréprochable.',
-                              'Produits longue tenue : Nous utilisons uniquement des vernis et bases de haute qualité, conçus pour durer plusieurs semaines sans s’abîmer.',
-                              'Choix de plus de 200 couleurs : Classiques, nude, pastel, éclatantes ou tendances : vous avez un nuancier large pour trouver exactement la teinte qui vous correspond.',
-                              'Techniciennes expertes en finition fine et nette : Nos spécialistes maîtrisent la pose en bord très fin, la précision autour des cuticules et la brillance parfaite pour un résultat propre et élégant.',
+                              'Gel professionnel haute qualité',
+                              'Formes nettes et symétriques',
+                              'Expertise en constructions fines',
+                              'Choix de designs modernes',
                             ],
                             image: 'assets/images/extension_de_cils/extention_de_cils.jpg',
                             imageAlt: 'Salon Russiaville beauty marrakech',
@@ -203,7 +195,7 @@ export class ExtensionOnglesGelComponent {
                       
                         // Section Cta
                         ctaData: CtaBannerDataType = { 
-                          description: `Pour une pose semi-permanente qui reste brillante plusieurs semaines, vous pouvez nous écrire pour un créneau.`,
+                          description: `Écrivez-nous si vous souhaitez des extensions gel solides et élégantes à Marrakech.`,
                           buttonText: 'Envoyer un message pour les disponibilités',
                           buttonLink: 'https://dikidi.net/1891924?p=0.pi',
                         };

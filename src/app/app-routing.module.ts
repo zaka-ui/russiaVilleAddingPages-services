@@ -26,6 +26,9 @@ import { TeintureSourcilsComponent } from './pages/categories/services-sourcils/
 import { EpilationSourcilsComponent } from './pages/categories/services-sourcils/epilation-sourcils/epilation-sourcils.component';
 import { ManucureSemiPermanenteComponent } from './pages/categories/services-ongles/manucure-semi-permanente/manucure-semi-permanente.component';
 import { ExtensionOnglesGelComponent } from './pages/categories/services-ongles/extension-ongles-gel/extension-ongles-gel.component';
+import { DeposeOnglesComponent } from './pages/categories/services-ongles/depose-ongles/depose-ongles.component';
+import { PedicureGelComponent } from './pages/categories/services-ongles/pedicure-gel/pedicure-gel.component';
+import { DesignOnglesComponent } from './pages/categories/services-ongles/design-ongles/design-ongles.component';
 
 export const routes: Routes = [
   { path: '', component: HomepageComponent },
@@ -40,7 +43,6 @@ export const routes: Routes = [
   { path: 'extension-de-cils-marrakech', component: ExtensionsDeCilsComponent },
   { path: 'sourcils-marrakech', component: SourcilsComponent },
   { path: 'ongles-marrakech', component: OnglesComponent },
-
 
   /****************************** Extension cils services routes *****************************************************/
   { path: 'extension/cil-à-cil-a-marrakech', component: ExtensionsCilAcilComponent }, 
@@ -58,13 +60,12 @@ export const routes: Routes = [
   { path: 'sourcils/teintre-sourcils-marrakech', component: TeintureSourcilsComponent }, 
   { path: 'sourcils/epilation-de-sourcils-marrakech', component: EpilationSourcilsComponent },
 
-
   /****************************** Ongles services Ongle *****************************************************/
   { path: 'ongles/manucure-semi-permanente-marrakech', component: ManucureSemiPermanenteComponent }, 
   { path: 'ongles/extensions-ongles-gel-marrakech', component: ExtensionOnglesGelComponent},
-  // { path: 'ongles/depose-ongles-marrakech', component: ExtensionsCilAcilComponent }, // Change Component
-  // { path: 'ongles/pedicure-gel-marrakech', component: ExtensionsCilAcilComponent }, // Change Component
-  // { path: 'ongles/art-et-design-ongles-marrakech', component: ExtensionsCilAcilComponent }, // Change Component
+  { path: 'ongles/depose-ongles-marrakech', component: DeposeOnglesComponent },
+  { path: 'ongles/pedicure-gel-marrakech', component: PedicureGelComponent }, 
+  { path: 'ongles/art-et-design-ongles-marrakech', component: DesignOnglesComponent },
 
 ];
 

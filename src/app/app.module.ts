@@ -59,6 +59,9 @@ import { TeintureSourcilsComponent } from './pages/categories/services-sourcils/
 import { EpilationSourcilsComponent } from './pages/categories/services-sourcils/epilation-sourcils/epilation-sourcils.component';
 import { ManucureSemiPermanenteComponent } from './pages/categories/services-ongles/manucure-semi-permanente/manucure-semi-permanente.component';
 import { ExtensionOnglesGelComponent } from './pages/categories/services-ongles/extension-ongles-gel/extension-ongles-gel.component';
+import { DeposeOnglesComponent } from './pages/categories/services-ongles/depose-ongles/depose-ongles.component';
+import { PedicureGelComponent } from './pages/categories/services-ongles/pedicure-gel/pedicure-gel.component';
+import { DesignOnglesComponent } from './pages/categories/services-ongles/design-ongles/design-ongles.component';
 
 @NgModule({
   declarations: [
@@ -117,7 +120,10 @@ import { ExtensionOnglesGelComponent } from './pages/categories/services-ongles/
     TeintureSourcilsComponent,
     EpilationSourcilsComponent,
     ManucureSemiPermanenteComponent,
-    ExtensionOnglesGelComponent
+    ExtensionOnglesGelComponent,
+    DeposeOnglesComponent,
+    PedicureGelComponent,
+    DesignOnglesComponent
     
   ],
   imports: [
