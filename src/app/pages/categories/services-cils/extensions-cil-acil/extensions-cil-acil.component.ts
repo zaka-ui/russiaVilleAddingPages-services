@@ -30,7 +30,7 @@ export class ExtensionsCilAcilComponent {
     }
   ];
 
-  slideImage: string = 'assets/images/sourcils/1.png';
+  slideImage: string = 'assets/images/extension_de_cils/Extension-cil-a-cil.jpg.webp';
   slideImageAlt: string = 'Extensions cil à cil Marrakech : la pose 1D pour un regard naturel et soigné';
 
   /****  Lopp Section ***/
@@ -83,8 +83,8 @@ export class ExtensionsCilAcilComponent {
         smallDesc: ""
       },
     ],
-    image: 'assets/images/sourcils/5.png',
-    imageAlt: 'Nails Service',
+    image: 'assets/images/extension_de_cils/extension1d.png',
+    imageAlt: 'Extensions cil à cil Marrakech',
     imagePosition: 'left',
     conseil: ' Durée de la séance : Environ 1h15. Un effet naturel, doux, propre, parfait pour un look maquillé sans mascara.'
   }
@@ -207,38 +207,11 @@ export class ExtensionsCilAcilComponent {
     conseil: ''
   }
 
-  /* Section 6
-    highlightDataDepose: any = {
-      subtitle: '',
-      title: 'Dépose ongles Marrakech',
-      text: `La dépose doit être douce pour ne pas abîmer l’ongle naturel.
-            Beaucoup de clientes viennent avec des ongles fragilisés à cause de dépôts mal faits ailleurs.`,
-  
-      features: [
-        'Limage léger',
-        'Produit adapté',
-        'Aucune traction',
-        'Nettoyage précis',
-        'Hydratation de l’ongle naturel',
-      ],
-      textSecond : "Quand faire une dépose ?",
-      featuresSecond : [
-        'Gel trop épais',
-        'Gel qui se soulève',
-        'Besoin de repartir sur une base saine',
-        'Envie de faire une pause',
-      ],
-      image: 'assets/images/gallery/15.png',
-      imageAlt: 'soin beauté ongles cils sourcils',
-      imagePosition: 'right',
-      conseil : 'Ne jamais tirer sur le gel à la maison. Cela abîme fortement la plaque de l’ongle.'
-    };
-  */
 
   // Section 7
   servicesDepose: any[] = [
     {
-      id: 'nails',
+      id: 'extension de cils',
       subtitle: '',
       title: 'Pourquoi choisir notre salon',
       description: `À Russiaville Beauty, on privilégie la qualité du résultat et la protection de vos cils naturels.
@@ -252,7 +225,7 @@ export class ExtensionsCilAcilComponent {
         'conseils personnalisés',
         'ambiance calme et moderne',
       ],
-      image: 'assets/images/sourcils/4.png',
+      image: 'assets/images/extension_de_cils/extention_de_cils.jpg',
       imageAlt: 'Dépose ongles Marrakech',
       imagePosition: 'left',
       conseil: `

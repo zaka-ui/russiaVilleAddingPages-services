@@ -46,6 +46,19 @@ import { AboutServiceWithAccordionComponent } from './components/about-service-w
 import { HighlightSectionWithAccordionComponent } from './components/highlight-section-with-accordion/highlight-section-with-accordion.component';
 import { DynamicLocationSectionComponent } from './components/dynamic-location-section/dynamic-location-section.component';
 import { ExtensionsCilAcilComponent } from './pages/categories/services-cils/extensions-cil-acil/extensions-cil-acil.component';
+import { ExtensionVolumeNaturelComponent } from './pages/categories/services-cils/extension-volume-naturel/extension-volume-naturel.component';
+import { ExtensionVolumeThreeDComponent } from './pages/categories/services-cils/extension-volume-three-d/extension-volume-three-d.component';
+import { ExtensionVolumeMegaComponent } from './pages/categories/services-cils/extension-volume-mega/extension-volume-mega.component';
+import { RemplissageExtensionsCilsMarrakechComponent } from './pages/categories/services-cils/remplissage-extensions-cils-marrakech/remplissage-extensions-cils-marrakech.component';
+import { DeposeExtensionsCilsComponent } from './pages/categories/services-cils/depose-extensions-cils/depose-extensions-cils.component';
+import { LaminationDeCilsComponent } from './pages/categories/services-cils/lamination-de-cils/lamination-de-cils.component';
+import { ColorationCilsMarrakechComponent } from './pages/categories/services-cils/coloration-cils-marrakech/coloration-cils-marrakech.component';
+import { BrowLaminationComponent } from './pages/categories/services-sourcils/brow-lamination/brow-lamination.component';
+import { RestructionSourcilsComponent } from './pages/categories/services-sourcils/restruction-sourcils/restruction-sourcils.component';
+import { TeintureSourcilsComponent } from './pages/categories/services-sourcils/teinture-sourcils/teinture-sourcils.component';
+import { EpilationSourcilsComponent } from './pages/categories/services-sourcils/epilation-sourcils/epilation-sourcils.component';
+import { ManucureSemiPermanenteComponent } from './pages/categories/services-ongles/manucure-semi-permanente/manucure-semi-permanente.component';
+import { ExtensionOnglesGelComponent } from './pages/categories/services-ongles/extension-ongles-gel/extension-ongles-gel.component';
 
 @NgModule({
   declarations: [
@@ -91,7 +104,20 @@ import { ExtensionsCilAcilComponent } from './pages/categories/services-cils/ext
     AboutServiceWithAccordionComponent,
     HighlightSectionWithAccordionComponent,
     DynamicLocationSectionComponent,
-    ExtensionsCilAcilComponent
+    ExtensionsCilAcilComponent,
+    ExtensionVolumeNaturelComponent,
+    ExtensionVolumeThreeDComponent,
+    ExtensionVolumeMegaComponent,
+    RemplissageExtensionsCilsMarrakechComponent,
+    DeposeExtensionsCilsComponent,
+    LaminationDeCilsComponent,
+    ColorationCilsMarrakechComponent,
+    BrowLaminationComponent,
+    RestructionSourcilsComponent,
+    TeintureSourcilsComponent,
+    EpilationSourcilsComponent,
+    ManucureSemiPermanenteComponent,
+    ExtensionOnglesGelComponent
     
   ],
   imports: [

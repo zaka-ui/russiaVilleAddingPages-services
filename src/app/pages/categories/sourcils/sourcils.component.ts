@@ -27,7 +27,7 @@ export class SourcilsComponent {
       ];
     
       slideImage : string = 'assets/images/sourcils/1.png';
-      slideImageAlt : string = 'Sourcils Marrakech';
+      slideImageAlt : string = 'Sourcils Marrakech - salon de beauté';
     
       /****  Lopp Section ***/
       items : string [] = ["Lignes naturelles, propres et adaptées à chaque visage "]

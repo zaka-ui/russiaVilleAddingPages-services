@@ -5,10 +5,10 @@
 				<div class="banner-5-txt color--white text-center">
 
 					<!-- Module Subtitle -->
-					<span class="module-subtitle">{{ data.subtitle }}</span>	
+					<span *ngIf="data.subtitle" class="module-subtitle">{{ data.subtitle }}</span>	
 
 					<!-- Title -->
-					<h2 class="fs-62" [innerHTML]="data.title"></h2>
+					<h2 *ngIf="data.title" class="fs-62" [innerHTML]="data.title"></h2>
 
 					<!-- Text -->
 					<p class="fs-17" [innerHTML]="data.description"></p>

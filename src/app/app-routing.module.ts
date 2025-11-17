@@ -13,6 +13,19 @@ import { ExtensionsDeCilsComponent } from './pages/categories/extensions-de-cils
 import { SourcilsComponent } from './pages/categories/sourcils/sourcils.component';
 import { OnglesComponent } from './pages/categories/ongles/ongles.component';
 import { ExtensionsCilAcilComponent } from './pages/categories/services-cils/extensions-cil-acil/extensions-cil-acil.component';
+import { ExtensionVolumeNaturelComponent } from './pages/categories/services-cils/extension-volume-naturel/extension-volume-naturel.component';
+import { ExtensionVolumeThreeDComponent } from './pages/categories/services-cils/extension-volume-three-d/extension-volume-three-d.component';
+import { ExtensionVolumeMegaComponent } from './pages/categories/services-cils/extension-volume-mega/extension-volume-mega.component';
+import { RemplissageExtensionsCilsMarrakechComponent } from './pages/categories/services-cils/remplissage-extensions-cils-marrakech/remplissage-extensions-cils-marrakech.component';
+import { DeposeExtensionsCilsComponent } from './pages/categories/services-cils/depose-extensions-cils/depose-extensions-cils.component';
+import { LaminationDeCilsComponent } from './pages/categories/services-cils/lamination-de-cils/lamination-de-cils.component';
+import { ColorationCilsMarrakechComponent } from './pages/categories/services-cils/coloration-cils-marrakech/coloration-cils-marrakech.component';
+import { BrowLaminationComponent } from './pages/categories/services-sourcils/brow-lamination/brow-lamination.component';
+import { RestructionSourcilsComponent } from './pages/categories/services-sourcils/restruction-sourcils/restruction-sourcils.component';
+import { TeintureSourcilsComponent } from './pages/categories/services-sourcils/teinture-sourcils/teinture-sourcils.component';
+import { EpilationSourcilsComponent } from './pages/categories/services-sourcils/epilation-sourcils/epilation-sourcils.component';
+import { ManucureSemiPermanenteComponent } from './pages/categories/services-ongles/manucure-semi-permanente/manucure-semi-permanente.component';
+import { ExtensionOnglesGelComponent } from './pages/categories/services-ongles/extension-ongles-gel/extension-ongles-gel.component';
 
 export const routes: Routes = [
   { path: '', component: HomepageComponent },
@@ -24,34 +37,34 @@ export const routes: Routes = [
   { path: 'photos', component: PhotosComponent },
   { path: 'contactez-nous', component: ContactsUsComponent },
   { path: 'a-propos-de-nous', component: AboutUsComponent },
-  { path: 'categorie/extension-de-cils-marrakech', component: ExtensionsDeCilsComponent },
-  { path: 'categorie/sourcils-marrakech', component: SourcilsComponent },
-  { path: 'categorie/ongles-marrakech', component: OnglesComponent },
+  { path: 'extension-de-cils-marrakech', component: ExtensionsDeCilsComponent },
+  { path: 'sourcils-marrakech', component: SourcilsComponent },
+  { path: 'ongles-marrakech', component: OnglesComponent },
 
 
   /****************************** Extension cils services routes *****************************************************/
-  { path: 'categorie/extension-de-cils/cil-à-cil-a-marrakech', component: ExtensionsCilAcilComponent }, // Change Component
-  { path: 'categorie/extension-de-cils/extensions-volume-naturel-marrakech', component: ExtensionsCilAcilComponent }, // Change Component
-  { path: 'categorie/extension-de-cils/extensions-volume-marrakech', component: ExtensionsCilAcilComponent }, // Change Component
-  { path: 'categorie/extension-de-cils/extension-mega-volume-marrakech', component: ExtensionsCilAcilComponent }, // Change Component
-  { path: 'categorie/extension-de-cils/remplissage-extensions-cils', component: ExtensionsCilAcilComponent }, // Change Component
-  { path: 'categorie/extension-de-cils/depose-extensions-cils', component: ExtensionsCilAcilComponent }, // Change Component
-  { path: 'categorie/extension-de-cils/coloration-cils-marrakech', component: ExtensionsCilAcilComponent }, // Change Component
-  { path: 'categorie/extension-de-cils/lamination-cils-marrakech', component: ExtensionsCilAcilComponent }, // Change Component
+  { path: 'extension/cil-à-cil-a-marrakech', component: ExtensionsCilAcilComponent }, 
+  { path: 'extension/extensions-de-cils-volume-naturel-marrakech', component: ExtensionVolumeNaturelComponent }, 
+  { path: 'extension/extensions-de-cils-volume-3d-marrakech', component: ExtensionVolumeThreeDComponent }, 
+  { path: 'extension/extension-de-cils-mega-volume-marrakech', component: ExtensionVolumeMegaComponent }, 
+  { path: 'extension/remplissage-extensions-cils-a-marrakech', component: RemplissageExtensionsCilsMarrakechComponent }, 
+  { path: 'extension/depose-extensions-cils-a-marrakech', component: DeposeExtensionsCilsComponent },
+  { path: 'extension-de-cils/lamination-cils-marrakech', component: LaminationDeCilsComponent }, 
+  { path: 'extension-de-cils/coloration-cils-marrakech', component: ColorationCilsMarrakechComponent }, 
 
   /****************************** Sourcils services routes *****************************************************/
-  { path: 'categorie/sourcils/brow-lamination', component: ExtensionsCilAcilComponent }, // Change Component
-  { path: 'categorie/sourcils/restruction-sourcils', component: ExtensionsCilAcilComponent }, // Change Component
-  { path: 'categorie/sourcils/teintre-sourcils', component: ExtensionsCilAcilComponent }, // Change Component
-  { path: 'categorie/sourcils/épilation-sourcils', component: ExtensionsCilAcilComponent }, // Change Component
+  { path: 'sourcils/brow-lamination-marrakech', component: BrowLaminationComponent },
+  { path: 'sourcils/restruction-sourcils-marrakech', component: RestructionSourcilsComponent}, 
+  { path: 'sourcils/teintre-sourcils-marrakech', component: TeintureSourcilsComponent }, 
+  { path: 'sourcils/epilation-de-sourcils-marrakech', component: EpilationSourcilsComponent },
 
 
   /****************************** Ongles services Ongle *****************************************************/
-  { path: 'categorie/ongles/manucure-semi-permanente-marrakech', component: ExtensionsCilAcilComponent }, // Change Component
-  { path: 'categorie/ongles/extension-ongles-gel-marrakech', component: ExtensionsCilAcilComponent }, // Change Component
-  { path: 'categorie/ongles/depose-ongles-marrakech', component: ExtensionsCilAcilComponent }, // Change Component
-  { path: 'categorie/ongles/pedicure-gel-marrakech', component: ExtensionsCilAcilComponent }, // Change Component
-  { path: 'categorie/ongles/art-et-design-ongles-marrakech', component: ExtensionsCilAcilComponent }, // Change Component
+  { path: 'ongles/manucure-semi-permanente-marrakech', component: ManucureSemiPermanenteComponent }, 
+  { path: 'ongles/extensions-ongles-gel-marrakech', component: ExtensionOnglesGelComponent},
+  // { path: 'ongles/depose-ongles-marrakech', component: ExtensionsCilAcilComponent }, // Change Component
+  // { path: 'ongles/pedicure-gel-marrakech', component: ExtensionsCilAcilComponent }, // Change Component
+  // { path: 'ongles/art-et-design-ongles-marrakech', component: ExtensionsCilAcilComponent }, // Change Component
 
 ];
 
