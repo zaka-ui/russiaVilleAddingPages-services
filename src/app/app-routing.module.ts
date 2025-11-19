@@ -44,7 +44,7 @@ export const routes: Routes = [
   { path: 'sourcils-marrakech', component: SourcilsComponent },
   { path: 'ongles-marrakech', component: OnglesComponent },
 
-  /****************************** Extension cils services routes *****************************************************/
+  /****************************** Services extension cils *****************************************************/
   { path: 'extension/cil-à-cil-a-marrakech', component: ExtensionsCilAcilComponent }, 
   { path: 'extension/extensions-de-cils-volume-naturel-marrakech', component: ExtensionVolumeNaturelComponent }, 
   { path: 'extension/extensions-de-cils-volume-3d-marrakech', component: ExtensionVolumeThreeDComponent }, 
@@ -54,13 +54,13 @@ export const routes: Routes = [
   { path: 'extension-de-cils/lamination-cils-marrakech', component: LaminationDeCilsComponent }, 
   { path: 'extension-de-cils/coloration-cils-marrakech', component: ColorationCilsMarrakechComponent }, 
 
-  /****************************** Sourcils services routes *****************************************************/
+  /****************************** Services sourcils   *****************************************************/
   { path: 'sourcils/brow-lamination-marrakech', component: BrowLaminationComponent },
   { path: 'sourcils/restruction-sourcils-marrakech', component: RestructionSourcilsComponent}, 
   { path: 'sourcils/teintre-sourcils-marrakech', component: TeintureSourcilsComponent }, 
   { path: 'sourcils/epilation-de-sourcils-marrakech', component: EpilationSourcilsComponent },
 
-  /****************************** Ongles services Ongle *****************************************************/
+  /****************************** services ongle *****************************************************/
   { path: 'ongles/manucure-semi-permanente-marrakech', component: ManucureSemiPermanenteComponent }, 
   { path: 'ongles/extensions-ongles-gel-marrakech', component: ExtensionOnglesGelComponent},
   { path: 'ongles/depose-ongles-marrakech', component: DeposeOnglesComponent },

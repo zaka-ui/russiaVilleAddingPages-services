@@ -24,7 +24,7 @@ export class ColorationCilsMarrakechComponent {
           ];
         
           slideImage: string =
-            'assets/images/extension_de_cils/Extension-cil-a-cil.jpg.webp';
+            'assets/images/extension_de_cils/coloration_de_cils/1.png';
           slideImageAlt: string =
             'Coloration cils Marrakech';
         

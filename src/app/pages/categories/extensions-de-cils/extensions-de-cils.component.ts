@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ContentSectionData } from '../../../components/content-section/content-section.component';
+import { SeoService } from '../../../seo.service';
 
 
 
@@ -23,7 +24,12 @@ export class ExtensionsDeCilsComponent {
     {
       title: 'Extensions de cils Marrakech : des styles adaptés à chaque regard',
       subtitle: '',
-      description: 'Beaucoup de clientes de Guéliz et Majorelle nous disent qu’elles cherchent des extensions de cils à Marrakech qui tiennent malgré la chaleur, l’humidité et les journées longues. C’est un vrai sujet ici : beaucoup de poses tombent vite, les cils se collent, ou le style ne correspond pas au visage.Chez Russiaville Beauty, on prend le temps d’observer votre forme d’œil, votre courbe naturelle et votre routine avant de choisir la technique. Notre objectif est simple : un résultat harmonieux, léger, durable et confortable, même en été. Les clientes viennent souvent avec des questions : “Quelle technique me va le mieux ?” “Est-ce que ça tient avec le sport ?” “Dois-je faire un remplissage souvent ?” “Est-ce que la chaleur de Marrakech abîme les extensions ?” Ici, vous trouverez des réponses claires et les différentes prestations possibles. Toutes les poses sont adaptées à la vie quotidienne à Marrakech, que vous habitiez Guéliz, Hivernage, Sidi Ghanem ou que vous soyez de passage.',
+      description: `
+                      Beaucoup de clientes de Guéliz et Majorelle nous disent qu’elles ont du mal à trouver des extensions de cils qui tiennent vraiment malgré la chaleur et l’humidité de Marrakech. 
+                      Chez Russiaville Beauty, nous analysons la forme de vos yeux, votre style et votre routine pour choisir la technique la plus adaptée.
+                      Le résultat : des cils légers, harmonieux et durables, même en été ou avec une activité intense. Vous trouverez ici des réponses claires à vos questions (tenue, remplissage, sport, chaleur) ainsi que les prestations disponibles.
+                      Nos poses sont pensées pour la vie quotidienne à Marrakech, que vous viviez à Guéliz, Hivernage, Sidi Ghanem ou que vous soyez de passage.
+                    `,
       buttonText: 'Réserver',
       buttonLink: '/1891924?p=0.pi',
     }
@@ -192,7 +198,13 @@ export class ExtensionsDeCilsComponent {
     conseil : 'Conseil : garder les cils au sec pendant 24 heures après la séance.'
   };
 
-
+    constructor(private seoService: SeoService) {} // added constructor injection
+  
+    ngOnInit(): void {
+      // apply default SEO for the homepage (falls back to 'default' defined in SeoService)
+      const seo = this.seoService.getSeoForService('cilsPage');
+      this.seoService.applySeo(seo);
+    }
 
 
 }

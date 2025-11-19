@@ -1,1 +1,43 @@
-<p>design-ongles works!</p>
+<app-header></app-header>
+
+<!-- App Hero carousel -->
+<app-hero-carousel [titleFontSize]="'4rem'" [slides]="slides" [slideImage]="slideImage" [slideImageAlt]="slideImageAlt">
+</app-hero-carousel>
+
+<!--Text Loop-->
+<app-loop-carousel [items]="items"></app-loop-carousel>
+
+
+
+
+<!--third section-->
+<app-about-service-with-accordion [service]="servicesAbout"></app-about-service-with-accordion>
+
+
+
+<!--Forth section-->
+<app-highlight-section-with-accordion [data]="highlightData"></app-highlight-section-with-accordion>
+
+
+
+<!--third section-->
+<app-about-service-with-accordion [service]="faqData"></app-about-service-with-accordion>
+
+
+<ng-container *ngFor="let service of servicesDepose">
+    <app-about-services [service]="service"></app-about-services>
+</ng-container>
+
+
+<!--Price section-->
+<app-pricing-showcase></app-pricing-showcase>
+<!--Section Local-->
+<app-dynamic-location-section [data]="locationSectionData"></app-dynamic-location-section>
+
+
+<!--CTA-->
+<app-cta-banner [data]="ctaData"></app-cta-banner>
+<!--Tarif-->
+
+
+<app-footer></app-footer>

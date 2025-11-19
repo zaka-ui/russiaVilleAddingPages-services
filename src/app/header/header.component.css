@@ -1,3 +1,8 @@
+
+.subLinks {
+    display:  none;
+}
+
 ::ng-deep .desktoplogo img, .wscenterlogo img {
     width: auto;
     max-width: inherit;

@@ -3,6 +3,7 @@ import { CtaBannerDataType } from '../../../components/cta-banner/cta-banner.com
 import { ContentSectionData } from '../../../components/content-section/content-section.component';
 import { AccordionDataType } from '../../../components/see-more/see-more.component';
 import { LocationDataType } from '../../../components/dynamic-location-section/dynamic-location-section.component';
+import { SeoService } from '../../../seo.service';
 
 @Component({
   selector: 'app-sourcils',
@@ -248,4 +249,14 @@ export class SourcilsComponent {
             buttonText : "Envoyer un message pour les disponibilités",
             buttonLink : "https://dikidi.net/1891924?p=0.pi",
       }
+
+
+
+       constructor(private seoService: SeoService) {} // added constructor injection
+      
+        ngOnInit(): void {
+          // apply default SEO for the homepage (falls back to 'default' defined in SeoService)
+          const seo = this.seoService.getSeoForService('sourcilsPage');
+          this.seoService.applySeo(seo);
+        }
 }

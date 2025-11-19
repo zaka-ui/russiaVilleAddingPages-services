@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CtaBannerDataType } from '../../../../components/cta-banner/cta-banner.component';
 import { LocationDataType } from '../../../../components/dynamic-location-section/dynamic-location-section.component';
 import { ServiceAbout } from '../../../../components/about-service-with-accordion/about-service-with-accordion.component';
+import { SeoService } from '../../../../seo.service';
 
 @Component({
   selector: 'app-manucure-semi-permanente',
@@ -207,4 +208,12 @@ export class ManucureSemiPermanenteComponent {
                       buttonText: 'Envoyer un message pour les disponibilités',
                       buttonLink: 'https://dikidi.net/1891924?p=0.pi',
                     };
+    constructor(private seoService: SeoService) {} // added constructor injection
+    
+      ngOnInit(): void {
+        // apply default SEO for the homepage (falls back to 'default' defined in SeoService)
+        const seo = this.seoService.getSeoForService('serviceManucureSemiPermanant');
+        this.seoService.applySeo(seo);
+      }
+    
 }

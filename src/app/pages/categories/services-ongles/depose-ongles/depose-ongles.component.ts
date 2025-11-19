@@ -2,12 +2,17 @@ import { Component } from '@angular/core';
 import { LocationDataType } from '../../../../components/dynamic-location-section/dynamic-location-section.component';
 import { CtaBannerDataType } from '../../../../components/cta-banner/cta-banner.component';
 import { ServiceAbout } from '../../../../components/about-service-with-accordion/about-service-with-accordion.component';
+import { SeoService } from '../../../../seo.service';
 
 @Component({
   selector: 'app-depose-ongles',
   templateUrl: './depose-ongles.component.html',
   styleUrl: './depose-ongles.component.css',
 })
+
+
+
+
 export class DeposeOnglesComponent {
   /** carousel content */
   slides: Array<any> = [
@@ -15,7 +20,8 @@ export class DeposeOnglesComponent {
       title: 'Dépose ongles Marrakech',
       subtitle: '',
       description: `
-                  Beaucoup de clientes de Guéliz, Majorelle et Hivernage viennent nous voir parce qu’elles veulent des sourcils disciplinés, qui tiennent toute la journée malgré la chaleur de Marrakech. Le brow lamination Marrakech aide à redresser les poils, remplir les zones clairsemées et structurer le regard sans maquillage.
+                   Beaucoup de clientes viennent avec des poses trop épaisses, mal retirées ou douloureuses. 
+                   Une dépose d’ongles à Marrakech doit être douce, rapide et sans abîmer l’ongle naturel.
                   `,
       buttonText: 'Réserver',
       buttonLink: '/1891924?p=0.pi',
@@ -73,7 +79,7 @@ export class DeposeOnglesComponent {
       
     ],
     image: 'assets/images/extension_de_cils/extension1d.png',
-    imageAlt: 'Manucure semi-permanente Marrakech',
+    imageAlt: 'Service de dépose d\'ongles Marrakech',
     imagePosition: 'left',
     conseil:
       'Nous respectons l’ongle et évitons toute traction.',
@@ -85,41 +91,35 @@ export class DeposeOnglesComponent {
     title: 'Avantages :',
     features: [
       {
-        title: 'Résultat solide et élégant',
+        title: 'Aucune douleur',
         points: [
-          'Les extensions en gel offrent une structure résistante tout en gardant une apparence fine et raffinée.',
+          'La dépose est réalisée avec une technique douce, sans tiraillements ni sensations inconfortables.',
         ],
         smallDesc: '',
       },
       {
-        title: 'Idéal pour les ongles cassants ou courts',
+        title: 'Ongles naturels non abîmés',
         points: [
-          'Le gel renforce les ongles fragiles et permet d’obtenir immédiatement la longueur que vous souhaitez.',
+          'Le retrait se fait sans gratter ni limer excessivement, pour préserver la santé et la solidité de l’ongle.',
         ],
         smallDesc: '',
       },
       {
-        title: 'Longue tenue malgré la chaleur',
+        title: 'Préparation parfaite pour une nouvelle pose',
         points: [
-          'Même avec la chaleur de Marrakech, le gel reste stable, sans fissures ni décollement.',
+          'Les ongles sont laissés propres, nets et prêts à accueillir un nouveau semi-permanent ou une extension en gel.',
         ],
         smallDesc: '',
       },
       {
         title:
-          'Toutes les formes possibles : carré, amande, coffin, long ou court',
+          'Soin inclus',
         points: [
-          'La technique permet de créer exactement la forme et la longueur que vous aimez, avec une grande précision.',
+          'Un soin hydratant est appliqué pour nourrir et protéger l’ongle après la dépose.',
         ],
         smallDesc: '',
       },
-      {
-        title: 'Compatible avec le nail art Marrakech',
-        points: [
-          'Strass, motifs, dessin fin ou effet naturel : les extensions en gel accueillent parfaitement toutes les créations artistiques.',
-        ],
-        smallDesc: '',
-      },
+     
     ],
     image: 'assets/images/sourcils/5.jpg',
     imageAlt: "Avantages d'extension ongles gel Marrakech",
@@ -134,23 +134,19 @@ export class DeposeOnglesComponent {
     description: ``,
     features: [
       {
-        title: '“Ça tient combien de temps ?”',
-        points: ['3 à 4 semaines selon la repousse.'],
+        title: 'Est-ce que je peux enlever moi-même ?',
+        points: ['Non, vous risquez d’arracher des couches de l’ongle.'],
         smallDesc: '',
       },
       {
-        title: 'Est-ce que ça fait mal ?',
-        points: ['Non, nous utilisons une technique douce sans chauffe.'],
+        title: 'Est-ce long ?',
+        points: [' Environ 15 à 20 minutes.'],
         smallDesc: '',
-      },
-      {
-        title: 'Je peux choisir la longueur ?',
-        points: [' Oui, du naturel au long glamour.'],
-        smallDesc: '',
-      },
+      }
+     
     ],
     image: 'assets/images/sourcils/5.png',
-    imageAlt: 'Extension ongles gel Marrakech faq',
+    imageAlt: 'Dépose d\'ongles Marrakech faq',
     imagePosition: 'left',
     conseil: '',
   };
@@ -162,14 +158,13 @@ export class DeposeOnglesComponent {
       subtitle: '',
       title: 'Pourquoi notre salon',
       features: [
-        'Gel professionnel haute qualité',
-        'Formes nettes et symétriques',
-        'Expertise en constructions fines',
-        'Choix de designs modernes',
+        'Dépose professionnelle douce',
+        'Produits sans acétone agressive',
+        'Soins fortifiants inclus',
       ],
       image: 'assets/images/extension_de_cils/extention_de_cils.jpg',
       imageAlt: 'Salon Russiaville beauty marrakech',
-      imagePosition: 'left',
+      imagePosition: 'right',
     },
   ];
 
@@ -189,8 +184,20 @@ export class DeposeOnglesComponent {
 
   // Section Cta
   ctaData: CtaBannerDataType = {
-    description: `Écrivez-nous si vous souhaitez des extensions gel solides et élégantes à Marrakech.`,
+    description: `Envie d’une dépose douce et propre ? Vous pouvez réserver votre créneau.`,
     buttonText: 'Envoyer un message pour les disponibilités',
     buttonLink: 'https://dikidi.net/1891924?p=0.pi',
   };
+
+
+
+
+  constructor(private seoService: SeoService) {} // added constructor injection
+  
+  ngOnInit(): void {
+    // apply default SEO for the homepage (falls back to 'default' defined in SeoService)
+    const seo = this.seoService.getSeoForService('serviceDeposeOngles');
+    this.seoService.applySeo(seo);
+  }
+  
 }

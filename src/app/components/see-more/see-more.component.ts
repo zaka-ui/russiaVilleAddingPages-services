@@ -33,15 +33,12 @@ export class SeeMoreComponent {
     // Initialize all accordions closed
     this.isOpen = this.accordionData.map(() => false);
   }
-
   toggle(index: number) {
     this.isOpen[index] = !this.isOpen[index];
-
     const body = this.bodies.toArray()[index].nativeElement;
-
     if (this.isOpen[index]) {
       const height = body.scrollHeight + 'px';
-      this.renderer.setStyle(body, 'max-height', height);
+      this.renderer.setStyle(body, 'max-height', "500px");
       this.renderer.setStyle(body, 'padding', '30px');
     } else {
       this.renderer.setStyle(body, 'max-height', '0px');

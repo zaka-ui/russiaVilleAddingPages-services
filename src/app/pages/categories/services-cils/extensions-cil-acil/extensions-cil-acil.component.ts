@@ -4,6 +4,7 @@ import { LocationDataType } from '../../../../components/dynamic-location-sectio
 import { AccordionDataType } from '../../../../components/see-more/see-more.component';
 import { ContentSectionData } from '../../../../components/content-section/content-section.component';
 import { ServiceAbout } from '../../../../components/about-service-with-accordion/about-service-with-accordion.component';
+import { SeoService } from '../../../../seo.service';
 
 @Component({
   selector: 'app-extensions-cil-acil',
@@ -260,65 +261,18 @@ export class ExtensionsCilAcilComponent {
     buttonText: "Envoyer un message pour les disponibilités",
     buttonLink: "https://dikidi.net/1891924?p=0.pi",
   }
+
+
+    constructor(private seoService: SeoService) {} // added constructor injection
+  
+    ngOnInit(): void {
+      // apply default SEO for the homepage (falls back to 'default' defined in SeoService)
+      const seo = this.seoService.getSeoForService('serviceExtensionCilACil');
+      this.seoService.applySeo(seo);
+    }
+  
 }
 
 
 
 
-
-
-/**  Section 3 start
-data: ContentSectionData = {
-  title: "Brow lamination Marrakech",
-  description: "Le brow lamination est devenu l’une des demandes les plus fréquentes à Marrakech. Beaucoup de clientes ont des sourcils qui tombent, s’éparpillent ou ne gardent pas leur forme, surtout en été. La lamination vient résoudre tout ça.",
-  buttonText: "Réserver",
-  buttonLink: "Réserver",
-  leftImage: {
-    id: "1",
-    src: "assets/images/sourcils/2.png",
-    alt: "Extensions cil à cil Marrakech 2d"
-  },
-  rightImage: {
-    id: "2",
-    src: "assets/images/sourcils/3.png",
-    alt: "Extensions cil à cil Marrakech 4d"
-  },
-  embeddedImage: {
-    id: "3",
-    src: "assets/images/sourcils/3.jpg",
-    alt: "Extensions cil à cil Marrakech 3d"
-  }
-
-}
-accordionData: AccordionDataType = [
-  {
-    title: 'Ce que fait le brow lamination',
-    points: [
-      'Redresser les poils',
-      'Harmoniser la ligne',
-      'Donner un effet lifté',
-      'Masquer les zones clairsemées',
-      'Rendre les sourcils plus denses',
-      'La tenue varie entre 6 et 8 semaines, même pendant les journées chaudes de Marrakech.'
-    ]
-  },
-  {
-    title: 'Pour qui ?',
-    points: [
-      'Sourcils qui manquent de structure',
-      'Poils qui descendent',
-      'Sourcils indisciplinés',
-      'femmes qui veulent un résultat durable',
-      'Clientes qui ne veulent pas maquiller tous les jours'
-    ]
-  },
-  {
-    title: 'Conseils après la séance',
-    points: [
-      'Garder au sec pendant 24 heures',
-      'Brosser légèrement le matin',
-      'Utiliser une huile nourrissante légère',
-    ]
-  }
-];
-*/
