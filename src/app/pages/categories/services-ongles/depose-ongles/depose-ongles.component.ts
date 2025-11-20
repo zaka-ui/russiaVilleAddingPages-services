@@ -29,7 +29,7 @@ export class DeposeOnglesComponent {
   ];
 
   slideImage: string =
-    'assets/images/extension_de_cils/Extension-cil-a-cil.jpg.webp';
+    'assets/images/gallery/img_09.jpg';
   slideImageAlt: string = 'Dépose ongles Marrakech';
 
   /****  Lopp Section ***/
@@ -76,9 +76,9 @@ export class DeposeOnglesComponent {
         ],
         smallDesc: '',
       },
-      
+
     ],
-    image: 'assets/images/extension_de_cils/extension1d.png',
+    image: 'assets/images/gallery/img_01.jpg',
     imageAlt: 'Service de dépose d\'ongles Marrakech',
     imagePosition: 'left',
     conseil:
@@ -119,9 +119,9 @@ export class DeposeOnglesComponent {
         ],
         smallDesc: '',
       },
-     
+
     ],
-    image: 'assets/images/sourcils/5.jpg',
+    image: 'assets/images/instagramImages/tools.jpg',
     imageAlt: "Avantages d'extension ongles gel Marrakech",
     imagePosition: 'right',
     conseil: '',
@@ -143,9 +143,9 @@ export class DeposeOnglesComponent {
         points: [' Environ 15 à 20 minutes.'],
         smallDesc: '',
       }
-     
+
     ],
-    image: 'assets/images/sourcils/5.png',
+    image: 'assets/images/gallery/16.png',
     imageAlt: 'Dépose d\'ongles Marrakech faq',
     imagePosition: 'left',
     conseil: '',
@@ -162,7 +162,7 @@ export class DeposeOnglesComponent {
         'Produits sans acétone agressive',
         'Soins fortifiants inclus',
       ],
-      image: 'assets/images/extension_de_cils/extention_de_cils.jpg',
+      image: 'assets/images/gallery/8.png',
       imageAlt: 'Salon Russiaville beauty marrakech',
       imagePosition: 'right',
     },
@@ -192,12 +192,12 @@ export class DeposeOnglesComponent {
 
 
 
-  constructor(private seoService: SeoService) {} // added constructor injection
-  
+  constructor(private seoService: SeoService) { } // added constructor injection
+
   ngOnInit(): void {
     // apply default SEO for the homepage (falls back to 'default' defined in SeoService)
     const seo = this.seoService.getSeoForService('serviceDeposeOngles');
     this.seoService.applySeo(seo);
   }
-  
+
 }

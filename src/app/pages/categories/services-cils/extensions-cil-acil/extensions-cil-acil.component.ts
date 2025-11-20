@@ -15,17 +15,15 @@ export class ExtensionsCilAcilComponent {
   /** carousel content */
   slides: Array<any> = [
     {
-      title: 'Extensions cil à cil Marrakech : la pose 1D pour un regard naturel et soigné',
+      title: 'Extensions cil à cil Marrakech – pose 1D naturelle',
       subtitle: '',
-      description: `
-                       Beaucoup de clientes à Marrakech cherchent un style naturel, propre et léger. Elles veulent des extensions de cils qui se remarquent sans être trop visibles. C’est pour ça que la pose cil à cil (1D) est l’une des plus demandées à Russiaville Beauty.
-                      Cette technique donne un résultat fin, élégant et durable, même avec la chaleur et l’humidité de Marrakech.
-                      Les clientes nous disent souvent :
-                      “Je veux un résultat naturel, pas un effet dramatique.”
-                      “J’ai peur que ça soit trop lourd.”
-                      “Je veux me réveiller avec un regard frais.”
-                      La pose 1D est faite pour ce besoin. Elle respecte vos cils naturels et crée un regard propre dès le matin.
-                        `,
+      description: `La pose cil à cil (1D) est la technique la plus demandée à Marrakech pour un rendu naturel et discret. Elle respecte la densité des cils, offre un résultat propre et léger, et reste stable même avec la chaleur ou l’humidité.
+                    Beaucoup de clientes recherchent un style élégant qui ne soit pas trop visible. Elles veulent améliorer leur regard sans effet dramatique ni sensation de lourdeur.
+                    Voici ce qu’elles nous disent souvent :
+                    « Je veux un rendu naturel, pas trop chargé. »
+                    « J’ai peur que ce soit trop lourd. »
+                    « Je veux me réveiller avec un regard frais. »
+                    La pose 1D répond précisément à ce besoin : elle apporte finesse, confort et fraîcheur dès le matin. `,
       buttonText: 'Réserver',
       buttonLink: '/1891924?p=0.pi',
     }
@@ -35,7 +33,7 @@ export class ExtensionsCilAcilComponent {
   slideImageAlt: string = 'Extensions cil à cil Marrakech : la pose 1D pour un regard naturel et soigné';
 
   /****  Lopp Section ***/
-  items: string[] = ["Pose 1D pour un regard naturel et soigné"]
+  items: string[] = ["Regard naturel et soigné"]
 
   // Section 3 service with accordionds
   servicesAbout: ServiceAbout | any = {
@@ -94,7 +92,7 @@ export class ExtensionsCilAcilComponent {
   // secction 4
   highlightData: any = {
     subtitle: 'Sublimez votre beauté naturelle',
-    title: 'Avantages des extensions cil à cil 1D',
+    title: 'Avantages des extensions 1D',
     text: `La plupart des clientes choisissent cette technique pour sa légèreté. Voici les principaux avantages :`,
 
     features: [
@@ -214,7 +212,7 @@ export class ExtensionsCilAcilComponent {
     {
       id: 'extension de cils',
       subtitle: '',
-      title: 'Pourquoi choisir notre salon',
+      title: 'Pourquoi choisir Russiaville Beauty',
       description: `À Russiaville Beauty, on privilégie la qualité du résultat et la protection de vos cils naturels.
                     Pas de surcharge. Pas d’extensions trop longues. Pas de colle en excès.`,
       features: [
@@ -263,14 +261,14 @@ export class ExtensionsCilAcilComponent {
   }
 
 
-    constructor(private seoService: SeoService) {} // added constructor injection
-  
-    ngOnInit(): void {
-      // apply default SEO for the homepage (falls back to 'default' defined in SeoService)
-      const seo = this.seoService.getSeoForService('serviceExtensionCilACil');
-      this.seoService.applySeo(seo);
-    }
-  
+  constructor(private seoService: SeoService) { } // added constructor injection
+
+  ngOnInit(): void {
+    // apply default SEO for the homepage (falls back to 'default' defined in SeoService)
+    const seo = this.seoService.getSeoForService('serviceExtensionCilACil');
+    this.seoService.applySeo(seo);
+  }
+
 }
 
 

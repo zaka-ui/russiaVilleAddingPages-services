@@ -4,13 +4,13 @@ import { SeoService } from '../seo.service';
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
-  
+
   styleUrls: ['./homepage.component.css'] // <-- fix here
 })
 export class HomepageComponent implements OnInit { // added implements OnInit
-  slideImage : string= 'assets/images/hero-3-img.jpg'
-  slideImageAlt  : string = "'jdozjdoadjozad'"
- 
+  slideImage: string = 'assets/images/hero-3-img.jpg'
+  slideImageAlt: string = "'jdozjdoadjozad'"
+
   slides: any[] = [
     {
       subtitle: 'Des ongles qui parlent de vous',
@@ -19,7 +19,7 @@ export class HomepageComponent implements OnInit { // added implements OnInit
       buttonText: 'Découvrir Nos Services',
       buttonLink: '#ongles'
     },
-    
+
   ];
 
   // Items used by the loop text carousel (short labels that repeat)
@@ -247,7 +247,7 @@ export class HomepageComponent implements OnInit { // added implements OnInit
     ]
   };
 
-  constructor(private seoService: SeoService) {} // added constructor injection
+  constructor(private seoService: SeoService) { } // added constructor injection
 
   ngOnInit(): void {
     // apply default SEO for the homepage (falls back to 'default' defined in SeoService)

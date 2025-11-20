@@ -32,7 +32,7 @@ export class ExtensionVolumeThreeDComponent {
   ];
 
   slideImage: string =
-    'assets/images/extension_de_cils/Extension-cil-a-cil.jpg.webp';
+    'assets/images/instagramImages/cilsstk.jpg';
   slideImageAlt: string =
     'Extensions de cils volume Marrakech 3D';
 
@@ -93,7 +93,7 @@ export class ExtensionVolumeThreeDComponent {
         smallDesc: '',
       },
     ],
-    image: 'assets/images/extension_de_cils/extension1d.png',
+    image: 'assets/images/instagramImages/cils6.jpg',
     imageAlt: 'Extensions volume naturel Marrakech',
     imagePosition: 'left',
     conseil:
@@ -137,9 +137,9 @@ export class ExtensionVolumeThreeDComponent {
         points: ['Le 3D unifie très bien la ligne de cils.'],
         smallDesc: '',
       },
-      
+
     ],
-    image: 'assets/images/sourcils/5.jpg',
+    image: 'assets/images/instagramImages/cils14.jpg',
     imageAlt: 'Extensions de cils volume 3D',
     imagePosition: 'right',
     conseil: '',
@@ -230,13 +230,13 @@ export class ExtensionVolumeThreeDComponent {
       { name: 'Route de Casa', icon: '📍' },
       { name: 'Centre-ville', icon: '📍' },
     ],
-    descriptionTwo : "Le volume russe 3D est très apprécié pour :",
-          points : [
-            { name: 'Les soirées', icon: '✦' },
-            { name: 'Les événements', icon: '✦' },
-            { name: 'Les sorties dans l’Hivernage', icon: '✦' },
-            { name: 'Les mariages et anniversaires', icon: '✦' },
-          ],
+    descriptionTwo: "Le volume russe 3D est très apprécié pour :",
+    points: [
+      { name: 'Les soirées', icon: '✦' },
+      { name: 'Les événements', icon: '✦' },
+      { name: 'Les sorties dans l’Hivernage', icon: '✦' },
+      { name: 'Les mariages et anniversaires', icon: '✦' },
+    ],
   };
 
   // Section Cta
@@ -249,12 +249,12 @@ export class ExtensionVolumeThreeDComponent {
     buttonLink: 'https://dikidi.net/1891924?p=0.pi',
   };
 
-   constructor(private seoService: SeoService) {} // added constructor injection
-  
-    ngOnInit(): void {
-      // apply default SEO for the homepage (falls back to 'default' defined in SeoService)
-      const seo = this.seoService.getSeoForService('serviceExtensionVolume3D');
-      this.seoService.applySeo(seo);
-    }
-  
+  constructor(private seoService: SeoService) { } // added constructor injection
+
+  ngOnInit(): void {
+    // apply default SEO for the homepage (falls back to 'default' defined in SeoService)
+    const seo = this.seoService.getSeoForService('serviceExtensionVolume3D');
+    this.seoService.applySeo(seo);
+  }
+
 }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CtaBannerDataType } from '../../../../components/cta-banner/cta-banner.component';
 import { LocationDataType } from '../../../../components/dynamic-location-section/dynamic-location-section.component';
 import { ServiceAbout } from '../../../../components/about-service-with-accordion/about-service-with-accordion.component';
+import { SeoService } from '../../../../seo.service';
 
 @Component({
   selector: 'app-epilation-sourcils',
@@ -23,7 +24,7 @@ export class EpilationSourcilsComponent {
   ];
 
   slideImage: string =
-    'assets/images/extension_de_cils/Extension-cil-a-cil.jpg.webp';
+    'assets/images/s_brows.png';
   slideImageAlt: string = 'Épilation sourcils Marrakech';
 
   /****  Lopp Section ***/
@@ -33,7 +34,7 @@ export class EpilationSourcilsComponent {
   servicesAbout: ServiceAbout | any = {
     id: 'Épilation sourcils Marrakech',
     subtitle: '',
-    title: 'Comment se déroule la prestation',
+    title: 'Étapes du traitement',
     features: [
       {
         title: '1.  Mise en forme douce',
@@ -72,7 +73,7 @@ export class EpilationSourcilsComponent {
         smallDesc: '',
       },
     ],
-    image: 'assets/images/extension_de_cils/extension1d.png',
+    image: 'assets/images/sourcils_image.png',
     imageAlt: 'Épilation sourcils Marrakech',
     imagePosition: 'left',
   };
@@ -80,7 +81,7 @@ export class EpilationSourcilsComponent {
   // secction 4
   highlightData: any = {
     subtitle: 'Sublimez votre beauté naturelle',
-    title: 'Avantages :',
+    title: 'Avantages de notre méthode :',
     features: [
       {
         title: 'Un rendu propre en quelques minutes',
@@ -152,14 +153,14 @@ export class EpilationSourcilsComponent {
     {
       id: 'Épilation sourcils',
       subtitle: '',
-      title: 'Pourquoi notre salon',
+      title: 'Pourquoi choisir notre salon à Marrakech',
       features: [
         'Travail propre et maîtrisé : Chaque sourcil est travaillé avec précision, sans gestes brusques ni finitions approximatives, pour un résultat net et harmonieux. ',
         'Zéro sur-épilation :  Nous respectons toujours votre densité naturelle on nettoie, on structure, mais on ne retire jamais plus que nécessaire afin de conserver une ligne pleine et élégante.',
         'Ambiance calme et moderne : Le salon offre un cadre apaisant et contemporain, pensé pour que chaque cliente profite d’un moment de détente tout en recevant un soin de qualité.',
         'Emplacement idéal entre Guéliz et Majorelle : Situé dans une zone facilement accessible, notre salon est parfait pour les clientes locales comme pour les visiteurs qui veulent une mise en beauté rapide et professionnelle.',
       ],
-      image: 'assets/images/extension_de_cils/extention_de_cils.jpg',
+      image: 'assets/images/ct-04-2-01.png',
       imageAlt: 'Salon Russiaville beauty marrakech',
       imagePosition: 'left',
     },
@@ -186,4 +187,12 @@ export class EpilationSourcilsComponent {
     buttonText: 'Envoyer un message pour les disponibilités',
     buttonLink: 'https://dikidi.net/1891924?p=0.pi',
   };
+
+  constructor(private seoService: SeoService) { } // added constructor injection
+
+  ngOnInit(): void {
+    // apply default SEO for the homepage (falls back to 'default' defined in SeoService)
+    const seo = this.seoService.getSeoForService('serviceEpilationSourcils');
+    this.seoService.applySeo(seo);
+  }
 }

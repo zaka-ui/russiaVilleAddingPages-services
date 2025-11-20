@@ -1,16 +1,199 @@
+/* header.component.css */
+.linkPlusIcon {
+    display: flex;
+    padding: 20px 30px;
+}
+
+.linkPlusIcon a {
+    text-transform: capitalize !important;
+}
+
+.flaticon-arrow-down {
+    display: none;
+}
 
 .subLinks {
-    display:  none;
+    /* Hide by default, using opacity and visibility for smooth transitions */
+    opacity: 0;
+    visibility: hidden;
+    /* Absolute positioning for dropdown effect */
+    position: absolute;
+    z-index: 1000;
+    /* Increased z-index to ensure it sits above other content */
+
+    /* Styling the container */
+    background-color: #ffffff;
+    /* Crisp white background */
+    min-width: 240px;
+    /* Give it a defined width */
+    padding: 10px 0;
+    /* Vertical padding, no side padding here */
+    border-radius: 8px;
+    /* Rounded corners for a modern look */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    /* Soft, elegant drop shadow */
+    list-style: none;
+    /* Remove default list bullets */
+    text-align: start;
+    /* Slight space below the main link */
+    top: 0;
+    margin-top: 60px;
+    /* Smooth transition for opening/closing effect */
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    transform: translateY(10px);
+    /* Start slightly below for a nice "drop" animation */
 }
 
-::ng-deep .desktoplogo img, .wscenterlogo img {
+/* --- 2. SubLinks Open State (Activation) --- */
+.subLinks.open {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    /* Ensure it's rendered */
+    transform: translateY(0);
+    /* Move to final position */
+}
+
+/* --- 3. Individual List Item Styling --- */
+.subLinks li {
+    /* Removing the heavy border and extra margin from the original design */
+    border-bottom: none;
+    margin-bottom: 0;
+    width: 100%;
+    /* Subtle transition for background hover effect */
+    transition: background-color 0.2s ease;
+}
+
+/* Hover effect on the list item for visual feedback */
+.subLinks li:hover {
+    background-color: #f7f7f7;
+    /* Very light gray hover background */
+}
+
+/* --- 4. Anchor Link Styling --- */
+.subLinks li a {
+    font-family: 'Quicksand', sans-serif !important;
+    font-weight: 500;
+    /* Slightly heavier font weight for better readability */
+    color: #333333;
+    /* Darker text for contrast */
+    text-decoration: none;
+    /* Remove underline */
+
+    /* Full-width clickable area */
+    display: block;
+    padding: 12px 20px;
+    /* Increased padding for easier clicking */
+
+    transition: color 0.2s ease;
+}
+
+/* Hover effect on the anchor text */
+.subLinks li a:hover {
+    color: var(--theme-color, #ff6b6b);
+    /* Use your theme color (or a nice pink/red) on hover */
+}
+
+/* Optional: Last item cleanup */
+.subLinks li:last-child {
+    border-bottom: none;
+}
+
+
+
+
+::ng-deep .desktoplogo img,
+.wscenterlogo img {
     width: auto;
     max-width: inherit;
-    max-height: 80px ;
+    max-height: 80px;
 }
+
 @media (min-width: 414px) and (max-width: 479.98px) {
-    ::ng-deep .smllogo img, .cntr-menu .smllogo img {
+
+    ::ng-deep .smllogo img,
+    .cntr-menu .smllogo img {
         max-height: 50px !important;
     }
 }
 
+@media only screen and (max-width: 991px) {
+
+    /*
+    * 1. Redéfinir le conteneur du sous-menu pour le mode mobile
+    * (Il doit s'étendre verticalement et non flotter)
+    */
+    .linkPlusIcon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(212, 212, 212);
+        padding: 20px 20px;
+    }
+
+    .flaticon-arrow-down {
+        display: flex;
+    }
+
+    .subLinks {
+        /* Annuler le positionnement absolu du bureau */
+        position: static !important;
+        margin-top: 0;
+
+        /* Annuler la transition de bureau pour un affichage instantané */
+        transition: none !important;
+
+        /* Supprimer les effets de transition liés à la position */
+        transform: none !important;
+
+        /* Retirer l'ombre et l'arrière-plan par défaut pour s'intégrer au menu coulissant */
+        box-shadow: none !important;
+        background-color: #fcfcfc !important;
+        /* Couleur de fond très légère pour démarquer */
+        border-radius: 0 !important;
+
+
+        /* Gérer le basculement (Toggle) */
+        display: none;
+        /* Caché par défaut, Angular le changera en display: block */
+
+        /* Important: Réinitialiser l'opacité/visibilité pour utiliser display: none/block */
+        opacity: 1 !important;
+        visibility: visible !important;
+        border-bottom: 1px solid black;
+    }
+
+    /*
+    * 2. État Ouvert (Géré par la classe .open d'Angular)
+    */
+    .subLinks.open {
+        /* C'est la ligne clé pour afficher le sous-menu sur mobile */
+        display: block !important;
+    }
+
+    /*
+    * 3. Ajustements pour les éléments de liste à l'intérieur du sous-menu
+    */
+    .subLinks li {
+        width: 100%;
+    }
+
+    /* 4. Ajustements pour les liens à l'intérieur du sous-menu */
+    .subLinks li a {
+        /* Ajuster le padding pour l'alignement mobile */
+        padding: 10px 20px 10px 30px !important;
+        /* Ajouter un indent pour l'imbrication visuelle */
+        color: #555555;
+        border-bottom: 1px dashed #eeeeee;
+        /* Ligne de séparation légère */
+    }
+
+    .subLinks li:last-child a {
+        border-bottom: none;
+    }
+
+    /* 5. S'assurer que le hover (bureau) ne persiste pas sur mobile */
+    .subLinks li:hover {
+        background-color: transparent !important;
+    }
+}
